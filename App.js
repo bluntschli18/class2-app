@@ -2,16 +2,14 @@ import { Text, View, Image, TouchableOpacity, Button } from "react-native";
 import Onboarding_1 from "./components/Onboarding-1";
 // import Onboarding_2 from "./components/Onboarding_2";
 import Location from "./components/Location";
-// import Dolingo from "./components/Dolingo";
-// import Duolingo from "./components/Duolingo";
+import Duolingo from "./components/Duolingo";
 const App = () => {
   return (
     <View>
-      {/* <Duolingo/> */}
-      {/* <Dolingo/> */}
+      <Duolingo />
       {/* <Location /> */}
       {/* <Onboarding_2/> */}
-      <Onboarding_1/>
+      {/* <Onboarding_1/> */}
     </View>
   );
 };

@@ -12,7 +12,7 @@ const Duolingo = () => {
     >
       <Image
         source={require("./../assets/Duolingo.png")}
-        style={{ width: 180, height: 190 }}
+        style={{ marginTop:90, width: 180, height: 200 }}
       />
       <Text
         style={{
