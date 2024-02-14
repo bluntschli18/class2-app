@@ -1,6 +1,6 @@
 import { Text, View, Image, Button, TouchableOpacity } from "react-native";
 
-const Duolingo = () => {
+const Dolingo = () => {
   return (
     <View
       style={{
@@ -84,4 +84,4 @@ const Duolingo = () => {
   );
 };
 
-export default Duolingo;
+export default Dolingo;

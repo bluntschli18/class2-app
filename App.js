@@ -1,10 +1,10 @@
 import { Text, View, Image, TouchableOpacity, Button } from "react-native";
 import Location from "./components/Location";
-import Duolingo from "./components/duolingo";
+import Dolingo from "./components/Dolingo";
 const App = () => {
   return (
     <View>
-      <Duolingo/>
+      <Dolingo/>
       <Location />
     </View>
   );
