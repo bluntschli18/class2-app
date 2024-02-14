@@ -36,9 +36,9 @@ const Location = () => {
             /*alignItems:'center', justifyContent: 'center',*/
             textAlign: "center",
             backgroundColor: "red",
-            height: 60,
-            width: 200,
-            borderRadius: 19,
+            height: 50,
+            width: 395,
+            borderRadius: 10,
           }}
         >
           Grant Permission
