@@ -21,7 +21,7 @@ const Onboarding_1 = () => {
         </Text>
       </TouchableOpacity>
       <Image
-        style={{ margin: "auto", marginTop: 130 }}
+        style={{height:200, width:200, margin: "auto", marginTop: 130 }}
         source={require("./../assets/deliveryMan-removebg-preview.png")}
       />
       <View
