@@ -21,7 +21,7 @@ const Onboarding_1 = () => {
         </Text>
       </TouchableOpacity>
       <Image
-        style={{height:200, width:200, margin: "auto", marginTop: 130 }}
+        style={{ height: 200, width: 200, margin: "auto", marginTop: 130 }}
         source={require("./../assets/deliveryMan-removebg-preview.png")}
       />
       <View
@@ -37,10 +37,9 @@ const Onboarding_1 = () => {
         </Text>
         <Text
           style={{
-            height: 60,
             marginTop: 15,
             textAlign: "center",
-            fontSize: 17,
+            fontSize:17,
             fontWeight: 400,
           }}
         >
@@ -52,14 +51,16 @@ const Onboarding_1 = () => {
           style={{
             backgroundColor: "red",
             width: 395,
-            height: 50,
-            padding: 20,
             borderRadius: 10,
             marginTop: 100,
+            alignItems:'center',
+            justifyContent:'center',
+            height: 50,
           }}
         >
           <Text
             style={{
+                color:'white',
               textAlign: "center",
             }}
           >

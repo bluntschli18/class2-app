@@ -36,7 +36,6 @@ const Location = () => {
             /*alignItems:'center', justifyContent: 'center',*/
             textAlign: "center",
             backgroundColor: "red",
-            height: 50,
             width: 395,
             borderRadius: 10,
           }}
