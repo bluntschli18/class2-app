@@ -23,7 +23,13 @@ const Onboarding_2 = () => {
 
       <View style={{ marginTop: 40 }}>
         <Image
-          style={{height:200, width:200, alignSelf: "center", marginTop: 100, left: -6 }}
+          style={{
+            height: 200,
+            width: 200,
+            alignSelf: "center",
+            marginTop: 100,
+            left: -6,
+          }}
           source={require("./../assets/cuizines-removebg-preview.png")}
         />
 

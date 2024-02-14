@@ -12,7 +12,7 @@ const Location = () => {
       />
       <Text
         style={{
-            marginTop: 150,
+          marginTop: 150,
           textAlign: "center",
           fontWeight: 600,
           fontSize: 16,
@@ -24,20 +24,20 @@ const Location = () => {
         recieve more accurate delivery
       </Text>
       <TouchableOpacity
-        style={{marginTop: 60,
+        style={{
+          height: 50,
+          width: 395,
+          marginTop: 60,
           alignItems: "center",
           justifyContent: "center",
+          backgroundColor: "red",
+          borderRadius: 10,
         }}
       >
         <Text
           style={{
-            padding: 20,
             color: "white",
             /*alignItems:'center', justifyContent: 'center',*/
-            textAlign: "center",
-            backgroundColor: "red",
-            width: 395,
-            borderRadius: 10,
           }}
         >
           Grant Permission

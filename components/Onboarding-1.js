@@ -39,7 +39,7 @@ const Onboarding_1 = () => {
           style={{
             marginTop: 15,
             textAlign: "center",
-            fontSize:17,
+            fontSize: 17,
             fontWeight: 400,
           }}
         >
@@ -53,14 +53,14 @@ const Onboarding_1 = () => {
             width: 395,
             borderRadius: 10,
             marginTop: 100,
-            alignItems:'center',
-            justifyContent:'center',
+            alignItems: "center",
+            justifyContent: "center",
             height: 50,
           }}
         >
           <Text
             style={{
-                color:'white',
+              color: "white",
               textAlign: "center",
             }}
           >
