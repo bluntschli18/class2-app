@@ -18,7 +18,7 @@ const Onboarding_2 = () => {
       >
         <Text
           style={{
-            marginTop: -10,
+            marginTop: '-10%',
             left: 150,
             fontSize: 17,
             fontWeight: 600,
@@ -29,7 +29,7 @@ const Onboarding_2 = () => {
       </TouchableOpacity>
 
       <View
-        style={{marginTop:'-22%',
+        style={{marginTop:'-30%',
           alignItems: "center",
           justifyContent: "center",
           height: "90%",

@@ -63,7 +63,6 @@ const Duolingo = () => {
             backgroundColor: "#191920",
             padding: 24,
             width: 312,
-            borderWidth: 2,
             borderColor: "3525D70",
             marginTop: 20,
           }}
