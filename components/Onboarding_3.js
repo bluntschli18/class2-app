@@ -2,33 +2,35 @@ import { Text, TouchableOpacity, View } from "react-native";
 
 const Onboarding_3 = () => {
   return (
-    <View style={{ alignItems: "center", justifyContent: "center" }}>
-      <View style={{ marginTop: 700, justifyContent: "space-between" }}>
+    <View
+      style={{ height: "100%", alignItems: "center", justifyContent: "center" }}
+    >
         <TouchableOpacity
           style={{
             backgroundColor: "red",
-            width: 395,
+            width: '95%',
             alignItems: "center",
             justifyContent: "center",
-            height: 50,
+            height: '7%',
             borderRadius: 10,
+            marginTop:'130%',
           }}
         >
           <Text style={{ fontSize: 20 }}>Get Started</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={{
-            marginTop: 30,
+            marginTop: '10%',
             borderWidth: 1,
             alignItems: "center",
             justifyContent: "center",
-            height: 50,
+            height: '7%',
+            width: '95%',
             borderRadius: 10,
           }}
         >
           <Text style={{ fontSize: 20 }}>Login</Text>
         </TouchableOpacity>
-      </View>
     </View>
   );
 };
