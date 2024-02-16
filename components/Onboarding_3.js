@@ -11,20 +11,20 @@ const Onboarding_3 = () => {
             width: '95%',
             alignItems: "center",
             justifyContent: "center",
-            height: '7%',
+            height: 70,
             borderRadius: 10,
-            marginTop:'130%',
+            marginTop:'150%',
           }}
         >
           <Text style={{ fontSize: 20 }}>Get Started</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={{
-            marginTop: '10%',
+            marginTop: '5%',
             borderWidth: 1,
             alignItems: "center",
             justifyContent: "center",
-            height: '7%',
+            height: 70,
             width: '95%',
             borderRadius: 10,
           }}

@@ -1,15 +1,45 @@
 import { Text, Image, View, TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 const Location = () => {
+  const Navigation = useNavigation();
+
   return (
-    <View style={{height:'100%', width:'100%',  padding: 0, justifyContent: "center", alignItems: "center" }}>
-      <Text style={{height:'10%', marginTop: "45%", fontWeight: 600, fontSize: 20 }}>
+    <View
+      style={{
+        height: "100%",
+        width: "100%",
+        padding: 0,
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Text
+        style={{
+          height: "10%",
+          marginTop: "50%",
+          fontWeight: 600,
+          fontSize: 20,
+        }}
+      >
         Explore Restaurants Nearby
       </Text>
 
-      <View style = {{width:'100%', height:'90%', justifyContent:'center', alignItems:'center',}}>
+      <View
+        style={{
+          width: "100%",
+          height: "90%",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Image
-          style={{alignSelf:'center', width: "20%", height: "20%", marginTop: "36%" }}
+          style={{
+            alignSelf: "center",
+            width: "20%",
+            height: "20%",
+            marginTop: "25%",
+          }}
           source={require("./../assets/location-removebg-preview.png")}
         />
         <Text
@@ -28,19 +58,22 @@ const Location = () => {
         </Text>
         <TouchableOpacity
           style={{
-            height: '10%',
+            height: 70,
             width: "95%",
-            marginTop: "7%",
+            marginTop: "10%",
             alignItems: "center",
             justifyContent: "center",
             backgroundColor: "red",
             borderRadius: 10,
             alignSelf: "center",
           }}
+          onPress={() => Navigation.navigate("Onboarding-1")}
         >
           <Text
             style={{
               color: "white",
+              fontSize: 20,
+              fontWeight: 700,
             }}
           >
             Grant Permission

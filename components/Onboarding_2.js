@@ -1,27 +1,34 @@
 import { Text, View, TouchableOpacity, Image } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 const Onboarding_2 = () => {
+  const Navigation = useNavigation();
   return (
     <View
       style={{
         height: "100%",
         alignItems: "center",
         justifyContent: "center",
-        padding:'auto',
+        padding: "auto",
+        marginRight: 10,
       }}
     >
       <TouchableOpacity
         style={{
           marginTop: "40%",
-          height: "10%",
+          height: "4%",
+          // backgroundColor: "blue",
+          width: "20%",
+          alignSelf: "flex-end",
         }}
+        onPress={() => Navigation.navigate('Onboarding-3')}
       >
         <Text
           style={{
-            marginTop: '-10%',
-            left: 150,
+            textAlign: "center",
             fontSize: 17,
             fontWeight: 600,
+            top: 5,
           }}
         >
           Skip
@@ -29,7 +36,7 @@ const Onboarding_2 = () => {
       </TouchableOpacity>
 
       <View
-        style={{marginTop:'-30%',
+        style={{
           alignItems: "center",
           justifyContent: "center",
           height: "90%",
@@ -38,17 +45,16 @@ const Onboarding_2 = () => {
       >
         <Image
           style={{
+            marginTop: '6%',
             height: "35%",
-            width: "66%",
-            margin: "auto",
-            left: -7,
+            width: "68%",
           }}
           source={require("./../assets/cuizines-removebg-preview.png")}
         />
 
         <Text
           style={{
-            marginTop: "10%",
+            marginTop: 70,
             textAlign: "center",
             fontSize: 20,
             fontWeight: 900,
@@ -76,16 +82,19 @@ const Onboarding_2 = () => {
             backgroundColor: "red",
             width: "95%",
             alignSelf: "center",
-            height: "10%",
+            height: 70,
             alignItems: "center",
             justifyContent: "center",
             borderRadius: 10,
-            marginTop: "10%",
+            marginTop: 15,
           }}
         >
           <Text
             style={{
               textAlign: "center",
+              color: "white",
+              fontSize: 16,
+              fontWeight: 600,
             }}
           >
             Next

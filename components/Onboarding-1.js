@@ -1,6 +1,9 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 const Onboarding_1 = () => {
+const Navigation = useNavigation();
+
   return (
     <View
       style={{
@@ -9,12 +12,22 @@ const Onboarding_1 = () => {
         height: "100%",
       }}
     >
-      <TouchableOpacity style={{ marginTop: "40%", height: "10%" }}>
+      <TouchableOpacity
+        style={{
+          marginTop: "40%",
+          height: "4%",
+          // backgroundColor: "blue",
+          width: "20%",
+          alignSelf: "flex-end",
+        }}
+        onPress={() => Navigation.navigate("Onboarding-2")}
+      >
         <Text
           style={{
-            left: 150,
             fontSize: 17,
             fontWeight: 600,
+            textAlign: "center",
+            top: 5,
           }}
         >
           Skip
@@ -34,11 +47,11 @@ const Onboarding_1 = () => {
             height: "40%",
             width: "75%",
             margin: "auto",
-            marginTop: "10%",
+            marginTop: "20%",
           }}
           source={require("./../assets/deliveryMan-removebg-preview.png")}
         />
-        <Text style={{ fontSize: 20, fontWeight: 900 }}>
+        <Text style={{ marginTop: 70, fontSize: 20, fontWeight: 900 }}>
           Quench your craving
         </Text>
         <Text
@@ -58,16 +71,18 @@ const Onboarding_1 = () => {
             backgroundColor: "red",
             width: "95%",
             borderRadius: 10,
-            marginTop: "20%",
+            marginTop: "10%",
             alignItems: "center",
             justifyContent: "center",
-            height: "10%",
+            height: 70,
           }}
         >
           <Text
             style={{
               color: "white",
               textAlign: "center",
+              fontSize: 16,
+              fontWeight: 600,
             }}
           >
             Next
