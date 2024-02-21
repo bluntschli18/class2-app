@@ -47,7 +47,7 @@ const Navigation = useNavigation();
             height: "40%",
             width: "75%",
             margin: "auto",
-            marginTop: "20%",
+            marginTop: "18%",
           }}
           source={require("./../assets/deliveryMan-removebg-preview.png")}
         />

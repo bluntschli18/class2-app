@@ -9,13 +9,11 @@ const Onboarding_2 = () => {
         height: "100%",
         alignItems: "center",
         justifyContent: "center",
-        padding: "auto",
-        marginRight: 10,
       }}
     >
       <TouchableOpacity
         style={{
-          marginTop: "40%",
+          marginTop: "35%",
           height: "4%",
           // backgroundColor: "blue",
           width: "20%",
@@ -45,7 +43,7 @@ const Onboarding_2 = () => {
       >
         <Image
           style={{
-            marginTop: '6%',
+            marginTop: '10%',
             height: "35%",
             width: "68%",
           }}
