@@ -1,6 +1,8 @@
 import { Text, View, TextInput } from "react-native";
 
 const phone = () => {
+
+
   return (
     <View>
       {/* Form Section For Phone Number */}
@@ -10,6 +12,7 @@ const phone = () => {
         </Text>
         <TextInput
           style={{
+            require,
             height: 50,
             borderRadius: 9,
             borderWidth: 2,
@@ -22,8 +25,9 @@ const phone = () => {
         <Text style={{ marginTop: 10 }}>
           Phone Number <Text>*</Text>
         </Text>
-        <TextInput
-        keyboardType="nemeric"
+        <TextInput 
+        maxLength={11}
+        value={Number}
           style={{
             height: 50,
             borderRadius: 9,

@@ -13,6 +13,7 @@ import { StyleSheet } from "react-native";
 import { useState, useEffect } from "react";
 import FormPhone from "./FormPhone";
 import FormEmail from "./FormEmail";
+import Icon from "react-native-vector-icons/Ionicons"
 
 const GetStarted_1 = () => {
   const [isSelected, setSelection] = useState(false);
@@ -103,7 +104,8 @@ const GetStarted_1 = () => {
         {toggle == "Phone" ? <FormPhone /> : <FormEmail />}
         <View
           style={{ flexDirection: "row", backgroundColor: "yellow" }}
-        ></View>
+        >
+        </View>
       </View>
     </View>
   );
