@@ -8,6 +8,7 @@ import Onboarding_2 from "./components/Onboarding_2";
 import Location from "./components/Location";
 import Duolingo from "./components/Duolingo";
 import GetStarted_1 from "./components/GetSarted_1";
+import Test from "./components/Test";
 
 // rnfes is a shortcut for creating your react-native application entry point without typing anything
 
@@ -21,7 +22,7 @@ const App = () => {
         <Stack.Screen name="Onboarding-3" component={Onboarding_3} options={{headerShown: false}}/>
         <Stack.Screen name="GetStarted_1" component={GetStarted_1} options={{headerShown: false}}/>
         <Stack.Screen name="Duolingo" component={Duolingo} />
-
+        <Stack.Screen name="Test" component={Test} options={{headerShown: false}} />
       </Stack.Navigator>
     </NavigationContainer>
   );

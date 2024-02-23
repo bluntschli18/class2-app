@@ -9,6 +9,6 @@ const GetStarted_2 = () => {
   )
 }
 
-export default GetStarted_2;
+export default GetStarted_2;  
 
 const styles = StyleSheet.create({})
