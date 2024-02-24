@@ -3,11 +3,14 @@ import IconSet from "react-native-vector-icons/Ionicons";
 import { useState, useEffect } from "react";
 
 const phone = () => {
+  // Code lin for Password
   const [Password, setPassword] = useState();
   const [showPassword, setPasswordShown] = useState(false);
   const togglePasswordShown = () => {
     setPasswordShown(!showPassword);
   };
+
+  // Code lin for Confirm Password
   const [confirmPassword, setConfirmPassword] = useState();
   const [showConfirmPassword, setConfirmPasswordShown] = useState(false);
   const toggleConfirmPasswordShown = () => {
@@ -17,7 +20,6 @@ const phone = () => {
     <View>
       {/* Form Section For Phone Number */}
       <View style={{ marginTop: 5 }}>
-
         {/* Full Name Input */}
         <Text style={{ marginTop: 10 }}>
           Full Name <Text>*</Text>
@@ -47,7 +49,7 @@ const phone = () => {
             padding: 5,
           }}
           placeholder="Phone Number"
-          keyboardType="number-pad"
+          keyboardType="numeric"
         />
         {/* Password Input */}
         <Text style={{ marginTop: 10 }}>
@@ -73,10 +75,10 @@ const phone = () => {
             height: 40,
             position: "absolute",
             top: 237,
-            left: '86%',
+            left: "86%",
             padding: 15,
             width: 40,
-            justifyContent: "center, ",
+            justifyContent: "center",
             alignItems: "center",
           }}
         >
@@ -113,7 +115,7 @@ const phone = () => {
             height: 40,
             position: "absolute",
             top: 333,
-            left: '86%',
+            left: "86%",
             padding: 15,
             width: 40,
             justifyContent: "center, ",

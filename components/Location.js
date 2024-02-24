@@ -38,7 +38,7 @@ const Location = () => {
             alignSelf: "center",
             width: "20%",
             height: "20%",
-            marginTop: "30%",
+            marginTop: "33%",
           }}
           source={require("./../assets/location-removebg-preview.png")}
         />

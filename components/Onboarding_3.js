@@ -17,7 +17,7 @@ const Onboarding_3 = () => {
           borderRadius: 10,
           marginTop: "150%",
         }}
-        onPress={() => Navigation.navigate("GetStarted_1")}
+        onPress={() => Navigation.navigate("GetStarted")}
       >
         <Text style={{ fontSize: 20, color: "white" }}>Get Started</Text>
       </TouchableOpacity>

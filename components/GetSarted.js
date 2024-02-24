@@ -14,7 +14,7 @@ import { useState, useEffect } from "react";
 import FormPhone from "./FormPhone";
 import FormEmail from "./FormEmail";
 import Icon from "react-native-vector-icons/Ionicons";
-import Checkbox from "./../node_modules/expo-checkbox/build/Checkbox.d";
+import Checkbox from "expo-checkbox";
 
 const GetStarted_1 = () => {
   const [isSelected, setSelected] = useState(false);

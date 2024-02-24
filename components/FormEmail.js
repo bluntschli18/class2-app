@@ -3,11 +3,13 @@ import IconSet from "react-native-vector-icons/Ionicons";
 import { useState, useEffect } from "react";
 
 const Email = () => {
+  // Code lin for Password
   const [Password, setPassword] = useState();
   const [showPassword, setPasswordShown] = useState(false);
   const togglePasswordShown = () => {
     setPasswordShown(!showPassword);
   };
+  // Code lin for Confirm Password
   const [confirmPassword, setConfirmPassword] = useState();
   const [showConfirmPassword, setConfirmPasswordShown] = useState(false);
   const toggleConfirmPasswordShown = () => {
@@ -116,7 +118,7 @@ const Email = () => {
             left: "86%",
             padding: 15,
             width: 40,
-            justifyContent: "center, ",
+            justifyContent: "center",
             alignItems: "center",
           }}
         >
