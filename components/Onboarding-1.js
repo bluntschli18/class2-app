@@ -74,7 +74,7 @@ const Navigation = useNavigation();
             marginTop: "10%",
             alignItems: "center",
             justifyContent: "center",
-            height: 70,
+            height: 60,
           }}
           onPress={() => Navigation.navigate("Onboarding-2")}
         >

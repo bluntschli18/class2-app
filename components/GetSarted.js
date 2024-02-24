@@ -49,7 +49,7 @@ const GetStarted_1 = () => {
         <View style={{}}>
           <Text style={{ fontWeight: 800, fontSize: 24 }}>GET STARTED</Text>
           <Text style={{ fontWeight: 300, fontSize: 17 }}>
-            Sign up today and start placing your order
+            Sign up today to start placing your order
           </Text>
         </View>
         {/* Toggle Section */}
@@ -156,7 +156,7 @@ const GetStarted_1 = () => {
             width: "100%",
             alignItems: "center",
             justifyContent: "center",
-            height: 70,
+            height: 60,
             borderRadius: 10,
           }}
           onPress={() => Navigation.navigate("Test")}

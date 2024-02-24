@@ -13,7 +13,7 @@ const Onboarding_3 = () => {
           width: "95%",
           alignItems: "center",
           justifyContent: "center",
-          height: 70,
+          height: 60,
           borderRadius: 10,
           marginTop: "150%",
         }}
@@ -27,7 +27,7 @@ const Onboarding_3 = () => {
           borderWidth: 1,
           alignItems: "center",
           justifyContent: "center",
-          height: 70,
+          height: 60,
           width: "95%",
           borderRadius: 10,
         }}

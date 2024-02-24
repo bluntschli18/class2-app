@@ -35,7 +35,7 @@ const phone = () => {
           }}
           placeholder="Full Name"
         />
-        {/* P Input */}
+        {/* Phone Number Input */}
         <Text style={{ marginTop: 10 }}>
           Phone Number <Text>*</Text>
         </Text>
@@ -82,7 +82,7 @@ const phone = () => {
             alignItems: "center",
           }}
         >
-          <Text style={{ justifyContent: "center, ", alignItems: "center" }}>
+          <Text style={{ justifyContent: "center", alignItems: "center" }}>
             <IconSet
               name={showPassword ? "eye-off" : "eye"}
               onPress={togglePasswordShown}

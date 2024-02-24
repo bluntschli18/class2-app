@@ -79,7 +79,7 @@ const Onboarding_2 = () => {
             backgroundColor: "red",
             width: "95%",
             alignSelf: "center",
-            height: 70,
+            height: 60,
             alignItems: "center",
             justifyContent: "center",
             borderRadius: 10,

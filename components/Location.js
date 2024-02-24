@@ -58,7 +58,7 @@ const Location = () => {
         </Text>
         <TouchableOpacity
           style={{
-            height: 70,
+            height: 60,
             width: "95%",
             marginTop: "10%",
             alignItems: "center",
