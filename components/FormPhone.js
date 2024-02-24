@@ -118,7 +118,6 @@ const phone = () => {
             left: "86%",
             padding: 15,
             width: 40,
-            justifyContent: "center, ",
             alignItems: "center",
           }}
         >

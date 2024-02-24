@@ -7,13 +7,11 @@ const Onboarding_2 = () => {
     <View
       style={{
         height: "100%",
-        alignItems: "center",
-        justifyContent: "center",
       }}
     >
       <TouchableOpacity
         style={{
-          marginTop: "35%",
+          marginTop: "15%",
           height: "4%",
           // backgroundColor: "blue",
           width: "20%",
@@ -43,7 +41,7 @@ const Onboarding_2 = () => {
       >
         <Image
           style={{
-            marginTop: "10%",
+            margin: "18%",
             height: "35%",
             width: "68%",
           }}
@@ -52,7 +50,7 @@ const Onboarding_2 = () => {
 
         <Text
           style={{
-            marginTop: 105,
+            marginTop: 95,
             textAlign: "center",
             fontSize: 20,
             fontWeight: 900,
@@ -65,9 +63,10 @@ const Onboarding_2 = () => {
           style={{
             marginTop: "3%",
             fontSize: 18,
+            width: "90%",
+            fontWeight: 600,
             textAlign: "center",
             alignSelf: "center",
-            justifyContent: "space-evenly",
           }}
         >
           From local favourite to global delight, find the perfect dish for
@@ -77,7 +76,7 @@ const Onboarding_2 = () => {
         <TouchableOpacity
           style={{
             backgroundColor: "red",
-            width: "95%",
+            width: "85%",
             alignSelf: "center",
             height: 60,
             alignItems: "center",
@@ -91,7 +90,7 @@ const Onboarding_2 = () => {
             style={{
               textAlign: "center",
               color: "white",
-              fontSize: 16,
+              fontSize: 20,
               fontWeight: 600,
             }}
           >

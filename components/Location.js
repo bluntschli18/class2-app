@@ -8,18 +8,15 @@ const Location = () => {
     <View
       style={{
         height: "100%",
-        width: "100%",
-        padding: 0,
-        justifyContent: "center",
-        alignItems: "center",
       }}
     >
       <Text
         style={{
           height: "10%",
-          marginTop: "50%",
           fontWeight: 600,
           fontSize: 20,
+          alignSelf:'center',
+          marginTop: "30%",
         }}
       >
         Explore Restaurants Nearby
@@ -38,7 +35,7 @@ const Location = () => {
             alignSelf: "center",
             width: "20%",
             height: "20%",
-            marginTop: "33%",
+            marginTop: "28%",
           }}
           source={require("./../assets/location-removebg-preview.png")}
         />
@@ -51,6 +48,7 @@ const Location = () => {
             color: "black",
             padding: 5,
             alignSelf: "center",
+            width: "90%",
           }}
         >
           By granting permission, you can search for restaurants around you and
@@ -59,7 +57,7 @@ const Location = () => {
         <TouchableOpacity
           style={{
             height: 60,
-            width: "95%",
+            width: "85%",
             marginTop: "10%",
             alignItems: "center",
             justifyContent: "center",

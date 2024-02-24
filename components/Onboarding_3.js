@@ -5,7 +5,13 @@ const Onboarding_3 = () => {
   const Navigation = useNavigation();
   return (
     <View
-      style={{ height: "100%", alignItems: "center", justifyContent: "center" }}
+      style={{
+        flexDirection: "column",
+        height: "100%",
+        padding: 20,
+        alignItems: "center",
+        justifyContent: "flex-end",
+      }}
     >
       <TouchableOpacity
         style={{
@@ -15,7 +21,6 @@ const Onboarding_3 = () => {
           justifyContent: "center",
           height: 60,
           borderRadius: 10,
-          marginTop: "150%",
         }}
         onPress={() => Navigation.navigate("GetStarted")}
       >
@@ -24,6 +29,7 @@ const Onboarding_3 = () => {
       <TouchableOpacity
         style={{
           marginTop: "5%",
+          marginBottom: 40,
           borderWidth: 1,
           alignItems: "center",
           justifyContent: "center",
