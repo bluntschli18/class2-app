@@ -51,7 +51,7 @@ const Navigation = useNavigation();
           }}
           source={require("./../assets/deliveryMan-removebg-preview.png")}
         />
-        <Text style={{ marginTop: 70, fontSize: 20, fontWeight: 900 }}>
+        <Text style={{ marginTop: 95, fontSize: 20, fontWeight: 900 }}>
           Quench your craving
         </Text>
         <Text
@@ -76,6 +76,7 @@ const Navigation = useNavigation();
             justifyContent: "center",
             height: 70,
           }}
+          onPress={() => Navigation.navigate("Onboarding-2")}
         >
           <Text
             style={{

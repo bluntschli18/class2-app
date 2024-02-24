@@ -67,24 +67,6 @@ const GetStarted_1 = () => {
             height: 60,
           }}
         >
-          {/* Phone Number  */}
-          <TouchableOpacity
-            style={{
-              width: "50%",
-              alignItems: "center",
-              justifyContent: "center",
-              borderTopLeftRadius: 7,
-              borderBottomLeftRadius: 7,
-              backgroundColor: toggle == "Phone" ? "red" : "white",
-              height: 56,
-            }}
-            onPress={() => toggleHandler("Phone")}
-          >
-            <Text style={{ color: toggle == "Phone" ? "white" : "red" }}>
-              Phone Number
-            </Text>
-          </TouchableOpacity>
-
           {/* Email Address */}
           <TouchableOpacity
             style={{
@@ -93,8 +75,8 @@ const GetStarted_1 = () => {
               justifyContent: "center",
               borderColor: "red",
               backgroundColor: "white",
-              borderTopRightRadius: 7,
-              borderBottomRightRadius: 7,
+              borderTopLeftRadius: 7,
+              borderBottomLeftRadius: 7,
               backgroundColor: toggle == "Email" ? "red" : "white",
               height: 56,
             }}
@@ -102,6 +84,24 @@ const GetStarted_1 = () => {
           >
             <Text style={{ color: toggle == "Email" ? "white" : "red" }}>
               Email Address
+            </Text>
+          </TouchableOpacity>
+
+          {/* Phone Number  */}
+          <TouchableOpacity
+            style={{
+              width: "50%",
+              alignItems: "center",
+              justifyContent: "center",
+              borderTopRightRadius: 7,
+              borderBottomRightRadius: 7,
+              backgroundColor: toggle == "Phone" ? "red" : "white",
+              height: 56,
+            }}
+            onPress={() => toggleHandler("Phone")}
+          >
+            <Text style={{ color: toggle == "Phone" ? "white" : "red" }}>
+              Phone Number
             </Text>
           </TouchableOpacity>
         </View>
@@ -131,22 +131,22 @@ const GetStarted_1 = () => {
             style={{
               flexDirection: "row",
               flexWrap: "wrap",
-              justifyContent: "flex-start",
+              //justifyContent: "flex-start",
             }}
           >
-            <Text style={{ fontSize: 15, marginHorizontal: 2 }}>
+            <Text style={{ fontSize: 17, marginHorizontal: 2 }}>
               If you are creating a new account,
             </Text>
-            <TouchableOpacity>
-              <Text style={{ color: "red", fontSize: 15 }}>
+            <TouchableOpacity style={{ flexWrap: 'wrap' }} >
+              <Text style={{ color: "red", fontSize: 17, flexWrap: 'wrap' }}>
                 Terms & Conditions
               </Text>
             </TouchableOpacity>
-            <Text style={{ paddingHorizontal: 2, fontSize: 15 }}>and</Text>
+            <Text style={{ paddingHorizontal: 2, fontSize: 17 }}>and</Text>
             <TouchableOpacity>
-              <Text style={{ color: "red", fontSize: 15 }}>Privacy Policy</Text>
+              <Text style={{ color: "red", fontSize: 17 }}>Privacy Policy</Text>
             </TouchableOpacity>
-            <Text style={{ paddingHorizontal: 2, fontSize: 15 }}>
+            <Text style={{ paddingHorizontal: 2, fontSize: 17 }}>
               will apply
             </Text>
           </View>

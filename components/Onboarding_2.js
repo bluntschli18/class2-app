@@ -52,7 +52,7 @@ const Onboarding_2 = () => {
 
         <Text
           style={{
-            marginTop: 70,
+            marginTop: 105,
             textAlign: "center",
             fontSize: 20,
             fontWeight: 900,
@@ -67,7 +67,6 @@ const Onboarding_2 = () => {
             fontSize: 18,
             textAlign: "center",
             alignSelf: "center",
-            height: 90,
             justifyContent: "space-evenly",
           }}
         >
@@ -84,8 +83,9 @@ const Onboarding_2 = () => {
             alignItems: "center",
             justifyContent: "center",
             borderRadius: 10,
-            marginTop: 15,
+            marginTop: '10%',
           }}
+          onPress={() => Navigation.navigate('Onboarding-3')}
         >
           <Text
             style={{
