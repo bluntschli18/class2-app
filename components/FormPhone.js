@@ -121,7 +121,7 @@ const phone = () => {
             alignItems: "center",
           }}
         >
-          <Text style={{ justifyContent: "center, ", alignItems: "center" }}>
+          <Text style={{ justifyContent: "center", alignItems: "center" }}>
             <IconSet
               name={showConfirmPassword ? "eye-off" : "eye"}
               onPress={toggleConfirmPasswordShown}

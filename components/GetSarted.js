@@ -159,7 +159,7 @@ const GetStarted_1 = () => {
             height: 60,
             borderRadius: 10,
           }}
-          onPress={() => Navigation.navigate("Test")}
+          onPress={() => Navigation.navigate("OtpVerification")}
         >
           <Text style={{ fontSize: 20, color: "white" }}>Get Started</Text>
         </TouchableOpacity>
