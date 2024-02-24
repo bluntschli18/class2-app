@@ -31,6 +31,7 @@ const Onboarding_3 = () => {
           width: "95%",
           borderRadius: 10,
         }}
+        onPress={() => Navigation.navigate("Login")}
       >
         <Text style={{ fontSize: 20 }}>Login</Text>
       </TouchableOpacity>

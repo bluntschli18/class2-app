@@ -13,11 +13,9 @@ import { StyleSheet } from "react-native";
 import { useState, useEffect } from "react";
 import FormPhone from "./FormPhone";
 import FormEmail from "./FormEmail";
-import Icon from "react-native-vector-icons/Ionicons";
 import Checkbox from "expo-checkbox";
 
 const GetStarted_1 = () => {
-  const [isSelected, setSelected] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [toggle, setToggle] = useState("Email");
 
@@ -35,7 +33,7 @@ const GetStarted_1 = () => {
       {/* NavBar Section */}
       <Image
         source={require("./../assets/15-1-removebg.png")}
-        style={{ height: 80, width: 90, margin: 10, opacity: 90 }}
+        style={{ height: '10%', width: 90, margin: 10, opacity: 90 }}
       />
       {/* Main Section */}
       <View
@@ -137,8 +135,8 @@ const GetStarted_1 = () => {
             <Text style={{ fontSize: 17, marginHorizontal: 2 }}>
               If you are creating a new account,
             </Text>
-            <TouchableOpacity style={{ flexWrap: 'wrap' }} >
-              <Text style={{ color: "red", fontSize: 17, flexWrap: 'wrap' }}>
+            <TouchableOpacity style={{ flexWrap: "wrap" }}>
+              <Text style={{ color: "red", fontSize: 17, flexWrap: "wrap" }}>
                 Terms & Conditions
               </Text>
             </TouchableOpacity>
@@ -175,7 +173,7 @@ const GetStarted_1 = () => {
           }}
         >
           <Text style={{ fontSize: 15 }}>Already have an account?</Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => Navigation.navigate("Login")}>
             <Text style={{ color: "red", fontSize: 15 }}> Login </Text>
           </TouchableOpacity>
         </View>

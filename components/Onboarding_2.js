@@ -19,7 +19,7 @@ const Onboarding_2 = () => {
           width: "20%",
           alignSelf: "flex-end",
         }}
-        onPress={() => Navigation.navigate('Onboarding-3')}
+        onPress={() => Navigation.navigate("GetStarted")}
       >
         <Text
           style={{
@@ -43,7 +43,7 @@ const Onboarding_2 = () => {
       >
         <Image
           style={{
-            marginTop: '10%',
+            marginTop: "10%",
             height: "35%",
             width: "68%",
           }}
@@ -83,9 +83,9 @@ const Onboarding_2 = () => {
             alignItems: "center",
             justifyContent: "center",
             borderRadius: 10,
-            marginTop: '10%',
+            marginTop: "10%",
           }}
-          onPress={() => Navigation.navigate('Onboarding-3')}
+          onPress={() => Navigation.navigate("Onboarding-3")}
         >
           <Text
             style={{

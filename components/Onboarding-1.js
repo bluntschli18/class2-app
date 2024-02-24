@@ -20,7 +20,7 @@ const Navigation = useNavigation();
           width: "20%",
           alignSelf: "flex-end",
         }}
-        onPress={() => Navigation.navigate("Onboarding-2")}
+        onPress={() => Navigation.navigate("GetStarted")}
       >
         <Text
           style={{
