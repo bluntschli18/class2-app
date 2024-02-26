@@ -7,6 +7,7 @@ import {
   TextInput,
   ScrollView,
   Alert,
+  KeyboardAvoidingView,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { StyleSheet } from "react-native";
@@ -29,17 +30,17 @@ const GetStarted_1 = () => {
 
   const Navigation = useNavigation();
   return (
-    <View style={{ height: "100%", backgroundColor: "red" }}>
+    <KeyboardAvoidingView style={{ height: "100%", backgroundColor: "red" }}>
       {/* NavBar Section */}
       <Image
         source={require("./../assets/15-1-removebg.png")}
-        style={{ height: 60, width: 90, margin: 10, opacity: 90 }}
+        style={{ height: "7%", width: 90, margin: 10, opacity: 90 }}
       />
       {/* Main Section */}
       <View
         style={{
           backgroundColor: "white",
-          height: "92.5%",
+          height: "93%",
           paddingHorizontal: 20,
           paddingVertical: 10,
           borderTopLeftRadius: 20,
@@ -76,7 +77,7 @@ const GetStarted_1 = () => {
               borderTopLeftRadius: 7,
               borderBottomLeftRadius: 7,
               backgroundColor: toggle == "Email" ? "red" : "white",
-              height: '100%',
+              height: "100%",
             }}
             onPress={() => toggleHandler("Email")}
           >
@@ -94,7 +95,7 @@ const GetStarted_1 = () => {
               borderTopRightRadius: 7,
               borderBottomRightRadius: 7,
               backgroundColor: toggle == "Phone" ? "red" : "white",
-              height: '100%',
+              height: "100%",
             }}
             onPress={() => toggleHandler("Phone")}
           >
@@ -105,7 +106,9 @@ const GetStarted_1 = () => {
         </View>
 
         {/* Toggle Section */}
-        {toggle == "Phone" ? <FormPhone /> : <FormEmail />}
+        <KeyboardAvoidingView>
+          {toggle == "Phone" ? <FormPhone /> : <FormEmail />}
+        </KeyboardAvoidingView>
 
         {/* Checkbox View  */}
         <View
@@ -178,7 +181,7 @@ const GetStarted_1 = () => {
           </TouchableOpacity>
         </View>
       </View>
-    </View>
+    </KeyboardAvoidingView>
   );
 };
 

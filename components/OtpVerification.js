@@ -5,6 +5,7 @@ import {
   StyleSheet,
   Text,
   TextInput,
+  TouchableOpacity,
 } from "react-native";
 // import OTPInputView from "react-native-text-input-otp";
 import Octicons from "@expo/vector-icons";
@@ -29,37 +30,56 @@ export default OtpVerification = () => {
           </Text>
           <View style={styles.body}>
             <TextInput
-              maxLength = {MAX_CODE_LENGTH}
+              maxLength={MAX_CODE_LENGTH}
               code={OTP}
-              setCode ={setOTP}
-              setPINReady = {setPINReady}
+              setCode={setOTP}
+              setPINReady={setPINReady}
               keyboardType="numeric"
               style={styles.TextInput}
             ></TextInput>
             <TextInput
-              maxLength = {MAX_CODE_LENGTH}
+              maxLength={MAX_CODE_LENGTH}
               code={OTP}
-              setCode ={setOTP}
-              setPINReady = {setPINReady}
+              setCode={setOTP}
+              setPINReady={setPINReady}
               keyboardType="numeric"
               style={styles.TextInput}
             ></TextInput>
             <TextInput
-              maxLength = {MAX_CODE_LENGTH}
+              maxLength={MAX_CODE_LENGTH}
               code={OTP}
-              setCode ={setOTP}
-              setPINReady = {setPINReady}
+              setCode={setOTP}
+              setPINReady={setPINReady}
               keyboardType="numeric"
               style={styles.TextInput}
             ></TextInput>
             <TextInput
-              maxLength = {MAX_CODE_LENGTH}
+              maxLength={MAX_CODE_LENGTH}
               code={OTP}
-              setCode ={setOTP}
-              setPINReady = {setPINReady}
+              setCode={setOTP}
+              setPINReady={setPINReady}
               keyboardType="numeric"
               style={styles.TextInput}
             ></TextInput>
+          </View>
+          <View style={styles.beforeVerify}>
+            <Text></Text>
+          </View>
+          <View style={styles.verify}>
+            <TouchableOpacity style={styles.touch} >
+              <Text style={styles.verifyText}>Verify my account</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.footer}>
+            <View style={styles.end}>
+              <Text style={styles.firstEndText}>Didn't recieve a cod?</Text>
+              <TouchableOpacity
+                styles={styles.touchableOpacity}
+                onPress={() => {}}
+              >
+                <Text style={styles.endText}>Resend code</Text>
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
       </KeyboardAvoidingView>
@@ -83,7 +103,7 @@ const styles = StyleSheet.create({
     color: "#000",
   },
   headerSubText: {
-    fontSize: 18,
+    fontSize: 12,
     fontWeight: "regular",
   },
   body: {
@@ -92,10 +112,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     width: "100%",
     gap: 12,
-    padding: 10,
+    padding: 15,
   },
   TextInput: {
-    width: "15%",
+    width: "25%",
     height: 60,
     borderWidth: 1,
     borderColor: "#000",
@@ -103,4 +123,29 @@ const styles = StyleSheet.create({
     padding: 10,
     textAlign: "center",
   },
+  beforeVerify: {},
+  touch:{
+    backgroundColor: "red",
+    width: "95%",
+    alignItems: "center",
+    justifyContent: "center",
+    height: 60,
+    borderRadius: 10,
+  },
+  verifyText:{
+    fontSize: 14,
+    fontWeight: "regular",
+    color: "#fff",
+  },
+  footer: { marginTop: 20 },
+  end: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+    gap: 12,
+    padding: 10,
+  },
+  endText: { color: "red" },
+  touchableOpacity: {},
 });

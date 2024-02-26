@@ -8,6 +8,7 @@ export default LoginEmail = () => {
   const togglePasswordShown = () => {
     setPasswordShown(!showPassword);
   };
+  const [email, onChangeEmail] = useState();
   return (
     <View>
        {/* Input */}
@@ -25,6 +26,8 @@ export default LoginEmail = () => {
           }}
           placeholder="Email Address"
           keyboardType="email-address"
+          value={email}
+          onChangeEmail={onChangeEmail}
         />
         {/* Password Input */}
         <Text style={{ marginTop: 10 }}>
@@ -50,20 +53,18 @@ export default LoginEmail = () => {
           style={{
             height: 40,
             position: "absolute",
-            top: 140,
-            left: "86%",
+            top: '76%',
+            left: "85%",
             padding: 15,
-            width: 40,
+            width: 50,
             alignItems: "center",
           }}
         >
-          <Text style={{ alignItems: "center" }}>
             <IconSet
               name={showPassword ? "eye-off" : "eye"}
               onPress={togglePasswordShown}
               height={50}
             />
-          </Text>
         </TouchableOpacity>
         
     </View>

@@ -8,6 +8,7 @@ export default LoginPhone = () => {
   const togglePasswordShown = () => {
     setPasswordShown(!showPassword);
   };
+  const [number, onChangeNumber] = useState();
   return (
     <View>
       {/* Phone Number Input */}
@@ -25,6 +26,8 @@ export default LoginPhone = () => {
         }}
         placeholder="Phone Number"
         keyboardType="numeric"
+        value={number}
+        onValueChange={onChangeNumber}
       />
       {/* Password Input */}
       <Text style={{ marginTop: 10 }}>
@@ -49,20 +52,18 @@ export default LoginPhone = () => {
         style={{
           height: 40,
           position: "absolute",
-          top: 140,
-          left: "86%",
+          top: "76%",
+          left: "85%",
           padding: 15,
-          width: 40,
+          width: 50,
           alignItems: "center",
         }}
       >
-        <Text style={{ alignItems: "center" }}>
-          <IconSet
-            name={showPassword ? "eye-off" : "eye"}
-            onPress={togglePasswordShown}
-            height={50}
-          />
-        </Text>
+        <IconSet
+          name={showPassword ? "eye-off" : "eye"}
+          onPress={togglePasswordShown}
+          height={50}
+        />
       </TouchableOpacity>
     </View>
   );

@@ -16,7 +16,7 @@ export default Login = () => {
     <View style={styles.container}>
       <Image
         source={require("./../assets/15-1-removebg.png")}
-        style={{ height: "10%", width: 90, margin: 10, opacity: 90 }}
+        style={{ height: "7%", width: 90, margin: 10, opacity: 90 }}
       />
       <View style={styles.welcome}>
         <Text style={styles.welcomeText}>Login</Text>
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     backgroundColor: "red",
   },
   welcome: {
-    height: "90%",
+    height: "93%",
     padding: 25,
     backgroundColor: "white",
     borderTopLeftRadius: 20,
