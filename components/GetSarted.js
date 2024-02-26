@@ -33,22 +33,23 @@ const GetStarted_1 = () => {
       {/* NavBar Section */}
       <Image
         source={require("./../assets/15-1-removebg.png")}
-        style={{ height: '10%', width: 90, margin: 10, opacity: 90 }}
+        style={{ height: 60, width: 90, margin: 10, opacity: 90 }}
       />
       {/* Main Section */}
       <View
         style={{
           backgroundColor: "white",
-          height: "90%",
-          padding: 25,
+          height: "92.5%",
+          paddingHorizontal: 20,
+          paddingVertical: 10,
           borderTopLeftRadius: 20,
           borderTopRightRadius: 20,
         }}
       >
         {/* Main Input Section */}
         <View style={{}}>
-          <Text style={{ fontWeight: 800, fontSize: 24 }}>GET STARTED</Text>
-          <Text style={{ fontWeight: 300, fontSize: 17 }}>
+          <Text style={{ fontWeight: 700, fontSize: 24 }}>Get Started</Text>
+          <Text style={{ fontWeight: 400, fontSize: 12 }}>
             Sign up today to start placing your order
           </Text>
         </View>
@@ -57,7 +58,6 @@ const GetStarted_1 = () => {
         <View
           style={{
             flexDirection: "row",
-            height: 50,
             borderRadius: 10,
             borderColor: "red",
             borderWidth: 2,
@@ -76,7 +76,7 @@ const GetStarted_1 = () => {
               borderTopLeftRadius: 7,
               borderBottomLeftRadius: 7,
               backgroundColor: toggle == "Email" ? "red" : "white",
-              height: 56,
+              height: '100%',
             }}
             onPress={() => toggleHandler("Email")}
           >
@@ -94,7 +94,7 @@ const GetStarted_1 = () => {
               borderTopRightRadius: 7,
               borderBottomRightRadius: 7,
               backgroundColor: toggle == "Phone" ? "red" : "white",
-              height: 56,
+              height: '100%',
             }}
             onPress={() => toggleHandler("Phone")}
           >
@@ -111,7 +111,7 @@ const GetStarted_1 = () => {
         <View
           style={{
             flexDirection: "row",
-            marginVertical: 10,
+            marginVertical: 0,
             flexWrap: "nowrap",
             width: "100%",
             paddingVertical: 10,
@@ -132,19 +132,19 @@ const GetStarted_1 = () => {
               //justifyContent: "flex-start",
             }}
           >
-            <Text style={{ fontSize: 17, marginHorizontal: 2 }}>
+            <Text style={{ fontSize: 12, marginLeft: 2 }}>
               If you are creating a new account,
             </Text>
             <TouchableOpacity style={{ flexWrap: "wrap" }}>
-              <Text style={{ color: "red", fontSize: 17, flexWrap: "wrap" }}>
+              <Text style={{ color: "red", fontSize: 12, flexWrap: "wrap" }}>
                 Terms & Conditions
               </Text>
             </TouchableOpacity>
-            <Text style={{ paddingHorizontal: 2, fontSize: 17 }}>and</Text>
+            <Text style={{ paddingHorizontal: 2, fontSize: 12 }}>and</Text>
             <TouchableOpacity>
-              <Text style={{ color: "red", fontSize: 17 }}>Privacy Policy</Text>
+              <Text style={{ color: "red", fontSize: 12 }}>Privacy Policy</Text>
             </TouchableOpacity>
-            <Text style={{ paddingHorizontal: 2, fontSize: 17 }}>
+            <Text style={{ paddingHorizontal: 2, fontSize: 12 }}>
               will apply
             </Text>
           </View>
@@ -172,9 +172,9 @@ const GetStarted_1 = () => {
             marginTop: 10,
           }}
         >
-          <Text style={{ fontSize: 15 }}>Already have an account?</Text>
+          <Text style={{ fontSize: 12 }}>Already have an account?</Text>
           <TouchableOpacity onPress={() => Navigation.navigate("Login")}>
-            <Text style={{ color: "red", fontSize: 15 }}> Login </Text>
+            <Text style={{ color: "red", fontSize: 12 }}> Login </Text>
           </TouchableOpacity>
         </View>
       </View>

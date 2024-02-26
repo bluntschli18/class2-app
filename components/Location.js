@@ -43,10 +43,10 @@ const Location = () => {
           style={{
             marginTop: "10%",
             textAlign: "center",
-            fontWeight: 700,
-            fontSize: 16,
+            fontWeight: "regular",
+            fontSize: 10,
             color: "black",
-            padding: 5,
+            // padding: 5,
             alignSelf: "center",
             width: "90%",
           }}
@@ -71,7 +71,7 @@ const Location = () => {
             style={{
               color: "white",
               fontSize: 20,
-              fontWeight: 700,
+              fontWeight: 'bold',
             }}
           >
             Grant Permission

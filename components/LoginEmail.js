@@ -50,15 +50,14 @@ export default LoginEmail = () => {
           style={{
             height: 40,
             position: "absolute",
-            top: 150,
+            top: 140,
             left: "86%",
             padding: 15,
             width: 40,
-            justifyContent: "center, ",
             alignItems: "center",
           }}
         >
-          <Text style={{ justifyContent: "center, ", alignItems: "center" }}>
+          <Text style={{ alignItems: "center" }}>
             <IconSet
               name={showPassword ? "eye-off" : "eye"}
               onPress={togglePasswordShown}

@@ -41,62 +41,64 @@ const Onboarding_2 = () => {
       >
         <Image
           style={{
-            margin: "18%",
+            margin: "16%",
+            marginBottom: "24%",
             height: "35%",
             width: "68%",
           }}
           source={require("./../assets/cuizines-removebg-preview.png")}
         />
-
-        <Text
-          style={{
-            marginTop: 95,
-            textAlign: "center",
-            fontSize: 20,
-            fontWeight: 900,
-          }}
-        >
-          Discover New Cuisines
-        </Text>
-
-        <Text
-          style={{
-            marginTop: "3%",
-            fontSize: 18,
-            width: "90%",
-            fontWeight: 600,
-            textAlign: "center",
-            alignSelf: "center",
-          }}
-        >
-          From local favourite to global delight, find the perfect dish for
-          every taste
-        </Text>
-
-        <TouchableOpacity
-          style={{
-            backgroundColor: "red",
-            width: "85%",
-            alignSelf: "center",
-            height: 60,
-            alignItems: "center",
-            justifyContent: "center",
-            borderRadius: 10,
-            marginTop: "10%",
-          }}
-          onPress={() => Navigation.navigate("Onboarding-3")}
-        >
+        <View style={{width:'100%'}}>
           <Text
             style={{
+              marginTop: 50,
               textAlign: "center",
-              color: "white",
               fontSize: 20,
-              fontWeight: 600,
+              fontWeight: 900,
             }}
           >
-            Next
+            Discover New Cuisines
           </Text>
-        </TouchableOpacity>
+
+          <Text
+            style={{
+              marginTop: "3%",
+              fontSize: 11,
+              width: "80%",
+              fontWeight: 400,
+              textAlign: "center",
+              alignSelf: "center",
+            }}
+          >
+            From local favourite to global delight, find the perfect dish for
+            every taste
+          </Text>
+        </View>
+        
+        <TouchableOpacity
+            style={{
+              backgroundColor: "red",
+              width: "85%",
+              alignSelf: "center",
+              height: 60,
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: 10,
+              marginTop: "10%",
+            }}
+            onPress={() => Navigation.navigate("Onboarding-3")}
+          >
+            <Text
+              style={{
+                textAlign: "center",
+                color: "white",
+                fontSize: 20,
+                fontWeight: 600,
+              }}
+            >
+              Next
+            </Text>
+          </TouchableOpacity>
       </View>
     </View>
   );

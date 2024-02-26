@@ -1,4 +1,4 @@
-import { Text, View, TextInput, TouchableOpacity } from "react-native";
+import { Text, View, TextInput, TouchableOpacity, KeyboardAvoidingView } from "react-native";
 import IconSet from "react-native-vector-icons/Ionicons";
 import { useState, useEffect } from "react";
 
@@ -17,9 +17,9 @@ const phone = () => {
     setConfirmPasswordShown(!showConfirmPassword);
   };
   return (
-    <View>
+    <View style={{}}>
       {/* Form Section For Phone Number */}
-      <View style={{ marginTop: 5 }}>
+      <KeyboardAvoidingView style={{ marginTop: 5 }}>
         {/* Full Name Input */}
         <Text style={{ marginTop: 10 }}>
           Full Name <Text>*</Text>
@@ -74,21 +74,18 @@ const phone = () => {
           style={{
             height: 40,
             position: "absolute",
-            top: 237,
-            left: "86%",
+            top: '63%',
+            left: "85%",
             padding: 15,
-            width: 40,
-            justifyContent: "center",
+            width: 50,
             alignItems: "center",
           }}
         >
-          <Text style={{ justifyContent: "center", alignItems: "center" }}>
             <IconSet
               name={showPassword ? "eye-off" : "eye"}
               onPress={togglePasswordShown}
               height={50}
             />
-          </Text>
         </TouchableOpacity>
         {/* Confirm Password Input */}
         <Text style={{ marginTop: 10 }}>
@@ -114,22 +111,20 @@ const phone = () => {
           style={{
             height: 40,
             position: "absolute",
-            top: 333,
-            left: "86%",
+            top: '87%',
+            left: "85%",
             padding: 15,
-            width: 40,
+            width: 50,
             alignItems: "center",
           }}
         >
-          <Text style={{ justifyContent: "center", alignItems: "center" }}>
-            <IconSet
+          <IconSet
               name={showConfirmPassword ? "eye-off" : "eye"}
               onPress={toggleConfirmPasswordShown}
               height={50}
             />
-          </Text>
         </TouchableOpacity>
-      </View>
+      </KeyboardAvoidingView>
     </View>
   );
 };

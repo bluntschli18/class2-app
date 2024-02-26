@@ -1,4 +1,4 @@
-import { Text, View, TextInput, TouchableOpacity } from "react-native";
+import { Text, View, TextInput, TouchableOpacity, KeyboardAvoidingView } from "react-native";
 import IconSet from "react-native-vector-icons/Ionicons";
 import { useState, useEffect } from "react";
 
@@ -18,7 +18,7 @@ const Email = () => {
   return (
     <View>
       {/* Form Section For Email */}
-      <View style={{ marginTop: 5 }}>
+      <KeyboardAvoidingView style={{ marginTop: 5 }}>
         <Text style={{ marginTop: 10 }}>
           Full Name <Text>*</Text>
         </Text>
@@ -74,21 +74,18 @@ const Email = () => {
           style={{
             height: 40,
             position: "absolute",
-            top: 237,
-            left: "86%",
+            top: '63%',
+            left: "85%",
             padding: 15,
-            width: 40,
-            justifyContent: "center, ",
+            width: 50,
             alignItems: "center",
           }}
         >
-          <Text style={{ justifyContent: "center, ", alignItems: "center" }}>
-            <IconSet
-              name={showPassword ? "eye-off" : "eye"}
-              onPress={togglePasswordShown}
-              height={50}
-            />
-          </Text>
+          <IconSet
+            name={showPassword ? "eye-off" : "eye"}
+            onPress={togglePasswordShown}
+            height={50}
+          />
         </TouchableOpacity>
         {/* Confirm Password Input */}
         <Text style={{ marginTop: 10 }}>
@@ -114,23 +111,20 @@ const Email = () => {
           style={{
             height: 40,
             position: "absolute",
-            top: 333,
-            left: "86%",
+            top: '87%',
+            left: "85%",
             padding: 15,
-            width: 40,
-            justifyContent: "center",
+            width: 50,
             alignItems: "center",
           }}
         >
-          <Text style={{ justifyContent: "center, ", alignItems: "center" }}>
-            <IconSet
-              name={showConfirmPassword ? "eye-off" : "eye"}
-              onPress={toggleConfirmPasswordShown}
-              height={50}
-            />
-          </Text>
+          <IconSet
+            name={showConfirmPassword ? "eye-off" : "eye"}
+            onPress={toggleConfirmPasswordShown}
+            height={50}
+          />
         </TouchableOpacity>
-      </View>
+      </KeyboardAvoidingView>
     </View>
   );
 };

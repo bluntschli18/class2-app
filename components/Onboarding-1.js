@@ -45,28 +45,27 @@ const Onboarding_1 = () => {
           style={{
             height: "40%",
             width: "75%",
-            margin: "auto",
-            margin: "18%",
+            margin: "15%",
           }}
           source={require("./../assets/deliveryMan-removebg-preview.png")}
         />
 
         <View style={{ margin: 10, alignItems: "center", justifyContent:'center', width: "90%", }}>
-          <Text style={{ marginTop: 95, fontSize: 20, fontWeight: 900 }}>
+          <Text style={{ marginTop: 55, fontSize: 20, fontWeight: 900 }}>
             Quench your craving
           </Text>
           <Text
             style={{
               marginTop: "3%",
               textAlign: "center",
-              fontSize: 16,
-              fontWeight: 700,
-              width: "80%",
+              fontSize: 12,
+              fontWeight: 400,
+              width: "90%",
               alignItems: "center",
               justifyContent: "center",
             }}
           >
-            Find yoiur favorite meal from your favorite restaurants and we will
+            Find your favorite meal from your favorite restaurants and we will
             deliver it to your door step
           </Text>
         </View>

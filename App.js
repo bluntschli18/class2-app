@@ -6,7 +6,7 @@ import Onboarding_1 from "./components/Onboarding-1";
 import Onboarding_3 from "./components/Onboarding_3";
 import Onboarding_2 from "./components/Onboarding_2";
 import Location from "./components/Location";
-import Duolingo from "./components/Duolingo";
+//import Duolingo from "./components/Duolingo";
 import GetStarted from "./components/GetSarted";
 import Login from "./components/Login";
 import Test from "./components/Test";
@@ -43,7 +43,7 @@ const App = () => {
           component={GetStarted}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name="Duolingo" component={Duolingo} />
+        {/* <Stack.Screen name="Duolingo" component={Duolingo} /> */}
         <Stack.Screen
           name="Test"
           component={Test}
