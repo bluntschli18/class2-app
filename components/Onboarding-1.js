@@ -8,7 +8,6 @@ const Onboarding_1 = () => {
     <View
       style={{
         height: "100%",
-        
       }}
     >
       <TouchableOpacity
@@ -43,14 +42,22 @@ const Onboarding_1 = () => {
       >
         <Image
           style={{
-            height: "40%",
+            height: "43%",
             width: "75%",
-            margin: "15%",
+            margin: "17%",
+            marginBottom: "10%",
           }}
           source={require("./../assets/deliveryMan-removebg-preview.png")}
         />
 
-        <View style={{ margin: 10, alignItems: "center", justifyContent:'center', width: "90%", }}>
+        <View
+          style={{
+            margin: 10,
+            alignItems: "center",
+            justifyContent: "center",
+            width: "90%",
+          }}
+        >
           <Text style={{ marginTop: 55, fontSize: 20, fontWeight: 900 }}>
             Quench your craving
           </Text>
@@ -58,7 +65,7 @@ const Onboarding_1 = () => {
             style={{
               marginTop: "3%",
               textAlign: "center",
-              fontSize: 12,
+              fontSize: 15,
               fontWeight: 400,
               width: "90%",
               alignItems: "center",
@@ -72,9 +79,10 @@ const Onboarding_1 = () => {
         <TouchableOpacity
           style={{
             backgroundColor: "red",
-            width: "85%",
+            width: "90%",
             borderRadius: 10,
             marginTop: "5%",
+            marginBottom: "5%",
             alignItems: "center",
             justifyContent: "center",
             height: 60,

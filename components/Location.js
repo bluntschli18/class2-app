@@ -44,7 +44,7 @@ const Location = () => {
             marginTop: "10%",
             textAlign: "center",
             fontWeight: "regular",
-            fontSize: 10,
+            fontSize: 13,
             color: "black",
             // padding: 5,
             alignSelf: "center",
@@ -57,7 +57,7 @@ const Location = () => {
         <TouchableOpacity
           style={{
             height: 60,
-            width: "85%",
+            width: "90%",
             marginTop: "10%",
             alignItems: "center",
             justifyContent: "center",

@@ -48,9 +48,9 @@ const GetStarted_1 = () => {
         }}
       >
         {/* Main Input Section */}
-        <View style={{}}>
+        <View style={{ paddingTop: 10 }}>
           <Text style={{ fontWeight: 700, fontSize: 24 }}>Get Started</Text>
-          <Text style={{ fontWeight: 400, fontSize: 12 }}>
+          <Text style={{ fontWeight: 400, fontSize: 16 }}>
             Sign up today to start placing your order
           </Text>
         </View>
@@ -114,8 +114,8 @@ const GetStarted_1 = () => {
         <View
           style={{
             flexDirection: "row",
-            marginVertical: 0,
-            flexWrap: "nowrap",
+            // paddingHorizontal: 0,
+            // flexWrap: "nowrap",
             width: "100%",
             paddingVertical: 10,
             // alignItems: 'center',
@@ -128,29 +128,37 @@ const GetStarted_1 = () => {
             background={isChecked ? "white" : "red"}
           />
 
-          <View
+          <Text
             style={{
               flexDirection: "row",
-              flexWrap: "wrap",
-              //justifyContent: "flex-start",
+              // flexWrap: "wrap",
+              marginLeft: 3,
+              width: "100%",
+              fontSize: 16,
+              justifyContent: "space-evenly",
             }}
           >
-            <Text style={{ fontSize: 12, marginLeft: 2 }}>
-              If you are creating a new account,
+            If you are creating a new account,
+            <Text
+              onPress={() => Navigation.navigate()}
+              style={{
+                color: "red",
+                fontSize: 16,
+                // flexWrap: "wrap",
+                marginHorizontal: 3,
+              }}
+            >
+              Terms & Conditions
             </Text>
-            <TouchableOpacity style={{ flexWrap: "wrap" }}>
-              <Text style={{ color: "red", fontSize: 12, flexWrap: "wrap" }}>
-                Terms & Conditions
-              </Text>
-            </TouchableOpacity>
-            <Text style={{ paddingHorizontal: 2, fontSize: 12 }}>and</Text>
-            <TouchableOpacity>
-              <Text style={{ color: "red", fontSize: 12 }}>Privacy Policy</Text>
-            </TouchableOpacity>
-            <Text style={{ paddingHorizontal: 2, fontSize: 12 }}>
-              will apply
+            and
+            <Text
+              onPress={() => Navigation.navigate()}
+              style={{ color: "red", fontSize: 16, marginHorizontal: 3 }}
+            >
+              Privacy Policy
             </Text>
-          </View>
+            will apply
+          </Text>
         </View>
         {/* Get Started Button */}
         <TouchableOpacity
@@ -168,18 +176,31 @@ const GetStarted_1 = () => {
         </TouchableOpacity>
 
         {/* Already Have an account section */}
-        <View
+        <Text
           style={{
-            justifyContent: "center",
+            justifyContent: "space-between",
             flexDirection: "row",
             marginTop: 10,
+            textAlign: "center",
+            gap: 10,
           }}
         >
-          <Text style={{ fontSize: 12 }}>Already have an account?</Text>
-          <TouchableOpacity onPress={() => Navigation.navigate("Login")}>
-            <Text style={{ color: "red", fontSize: 12 }}> Login </Text>
-          </TouchableOpacity>
-        </View>
+          <Text style={{ fontSize: 16, marginLeft: 2 }}>
+            Already have an account?
+          </Text>
+          <Text
+            onPress={() => Navigation.navigate("Login")}
+            style={{
+              textAlign: "center",
+              color: "red",
+              fontSize: 16,
+              marginLeft: 2,
+              fontWeight: "bold",
+            }}
+          >
+            Login
+          </Text>
+        </Text>
       </View>
     </KeyboardAvoidingView>
   );

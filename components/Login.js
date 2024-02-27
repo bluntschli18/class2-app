@@ -122,9 +122,9 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   welcomeSubText: {
-    fontSize: 17,
+    fontSize: 12,
     marginBottom: 10,
-    fontWeight: "300",
+    fontWeight: "regular",
   },
 
   dontHave: {

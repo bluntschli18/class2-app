@@ -42,7 +42,7 @@ const Onboarding_2 = () => {
         <Image
           style={{
             margin: "16%",
-            marginBottom: "24%",
+            marginBottom: "22%",
             height: "35%",
             width: "68%",
           }}
@@ -63,7 +63,7 @@ const Onboarding_2 = () => {
           <Text
             style={{
               marginTop: "3%",
-              fontSize: 11,
+              fontSize: 14,
               width: "80%",
               fontWeight: 400,
               textAlign: "center",
@@ -78,13 +78,13 @@ const Onboarding_2 = () => {
         <TouchableOpacity
             style={{
               backgroundColor: "red",
-              width: "85%",
+              width: "90%",
               alignSelf: "center",
               height: 60,
               alignItems: "center",
               justifyContent: "center",
               borderRadius: 10,
-              marginTop: "10%",
+              marginTop: "13%",
             }}
             onPress={() => Navigation.navigate("Onboarding-3")}
           >

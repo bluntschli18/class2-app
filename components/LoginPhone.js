@@ -22,7 +22,7 @@ export default LoginPhone = () => {
           borderWidth: 2,
           borderColor: "gray",
           marginTop: 10,
-          padding: 5,
+          padding: 10,
         }}
         placeholder="Phone Number"
         keyboardType="numeric"
@@ -40,31 +40,23 @@ export default LoginPhone = () => {
           borderWidth: 2,
           borderColor: "gray",
           marginTop: 10,
-          padding: 5,
+          padding: 10,
         }}
         secureTextEntry={!showPassword}
         value={Password}
         onValueChange={setPassword}
         placeholder="Enter Password"
       />
-      <TouchableOpacity
-        onPress={togglePasswordShown}
-        style={{
-          height: 40,
-          position: "absolute",
-          top: "76%",
-          left: "85%",
-          padding: 15,
-          width: 50,
-          alignItems: "center",
-        }}
-      >
-        <IconSet
+     <IconSet
           name={showPassword ? "eye-off" : "eye"}
           onPress={togglePasswordShown}
-          height={50}
+          style={{
+            position: "absolute",
+            fontSize: 20,
+            top: "80%",
+            left: "85%",
+          }}
         />
-      </TouchableOpacity>
     </View>
   );
 };

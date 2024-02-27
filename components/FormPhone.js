@@ -1,4 +1,10 @@
-import { Text, View, TextInput, TouchableOpacity, KeyboardAvoidingView } from "react-native";
+import {
+  Text,
+  View,
+  TextInput,
+  TouchableOpacity,
+  KeyboardAvoidingView,
+} from "react-native";
 import IconSet from "react-native-vector-icons/Ionicons";
 import { useState, useEffect } from "react";
 
@@ -32,6 +38,7 @@ const phone = () => {
             borderColor: "gray",
             marginTop: 10,
             padding: 5,
+            paddingHorizontal: 15,
           }}
           placeholder="Full Name"
         />
@@ -47,6 +54,7 @@ const phone = () => {
             borderColor: "gray",
             marginTop: 10,
             padding: 5,
+            paddingHorizontal: 15,
           }}
           placeholder="Phone Number"
           keyboardType="numeric"
@@ -63,30 +71,20 @@ const phone = () => {
             borderColor: "gray",
             marginTop: 10,
             padding: 5,
+            paddingHorizontal: 15,
           }}
           secureTextEntry={!showPassword}
           value={Password}
           onValueChange={setPassword}
           placeholder="Enter Password"
         />
-        <TouchableOpacity
-          onPress={togglePasswordShown}
-          style={{
-            height: 40,
-            position: "absolute",
-            top: '63%',
-            left: "85%",
-            padding: 15,
-            width: 50,
-            alignItems: "center",
-          }}
-        >
-            <IconSet
-              name={showPassword ? "eye-off" : "eye"}
-              onPress={togglePasswordShown}
-              height={50}
-            />
-        </TouchableOpacity>
+  
+          <IconSet
+            name={showPassword ? "eye-off" : "eye"}
+            onPress={togglePasswordShown}
+            style={{ position: "absolute", top: "65%", left: "85%", fontSize: 20, }}
+          />
+     
         {/* Confirm Password Input */}
         <Text style={{ marginTop: 10 }}>
           Confirm Password <Text>*</Text>
@@ -99,6 +97,7 @@ const phone = () => {
             borderColor: "gray",
             marginTop: 10,
             padding: 5,
+            paddingHorizontal: 15,
           }}
           secureTextEntry={!showConfirmPassword}
           value={confirmPassword}
@@ -106,24 +105,17 @@ const phone = () => {
           placeholder="Confirm Password"
           right={{}}
         />
-        <TouchableOpacity
+
+        <IconSet
+          name={showConfirmPassword ? "eye-off" : "eye"}
           onPress={toggleConfirmPasswordShown}
           style={{
-            height: 40,
-            position: "absolute",
-            top: '87%',
+            fontSize: 20,
+            top: "90%",
             left: "85%",
-            padding: 15,
-            width: 50,
-            alignItems: "center",
+            position: "absolute",
           }}
-        >
-          <IconSet
-              name={showConfirmPassword ? "eye-off" : "eye"}
-              onPress={toggleConfirmPasswordShown}
-              height={50}
-            />
-        </TouchableOpacity>
+        />
       </KeyboardAvoidingView>
     </View>
   );

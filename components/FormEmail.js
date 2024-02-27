@@ -18,7 +18,7 @@ const Email = () => {
   return (
     <View>
       {/* Form Section For Email */}
-      <KeyboardAvoidingView style={{ marginTop: 5 }}>
+      <KeyboardAvoidingView  style={{ marginTop: 5 }}>
         <Text style={{ marginTop: 10 }}>
           Full Name <Text>*</Text>
         </Text>
@@ -30,6 +30,7 @@ const Email = () => {
             borderColor: "gray",
             marginTop: 10,
             padding: 5,
+            paddingHorizontal: 15,
           }}
           placeholder="Full Name"
           keyboardType="ascii-capable"
@@ -46,6 +47,7 @@ const Email = () => {
             borderColor: "gray",
             marginTop: 10,
             padding: 5,
+            paddingHorizontal: 15,
           }}
           placeholder="Email Address"
           keyboardType="email-address"
@@ -62,6 +64,7 @@ const Email = () => {
             borderColor: "gray",
             marginTop: 10,
             padding: 5,
+            paddingHorizontal: 15,
           }}
           keyboardType="ascii-capable-number-pad"
           secureTextEntry={!showPassword}
@@ -69,24 +72,11 @@ const Email = () => {
           onValueChange={setPassword}
           placeholder="Enter Password"
         />
-        <TouchableOpacity
-          onPress={togglePasswordShown}
-          style={{
-            height: 40,
-            position: "absolute",
-            top: '63%',
-            left: "85%",
-            padding: 15,
-            width: 50,
-            alignItems: "center",
-          }}
-        >
-          <IconSet
+      <IconSet
             name={showPassword ? "eye-off" : "eye"}
             onPress={togglePasswordShown}
-            height={50}
+            style={{ position: "absolute", top: "65%", left: "85%", fontSize: 20, }}
           />
-        </TouchableOpacity>
         {/* Confirm Password Input */}
         <Text style={{ marginTop: 10 }}>
           Confirm Password <Text>*</Text>
@@ -99,6 +89,7 @@ const Email = () => {
             borderColor: "gray",
             marginTop: 10,
             padding: 5,
+            paddingHorizontal: 15,
           }}
           secureTextEntry={!showConfirmPassword}
           value={confirmPassword}
@@ -106,24 +97,16 @@ const Email = () => {
           placeholder="Confirm Password"
           keyboardType="ascii-capable-number-pad"
         />
-        <TouchableOpacity
+         <IconSet
+          name={showConfirmPassword ? "eye-off" : "eye"}
           onPress={toggleConfirmPasswordShown}
           style={{
-            height: 40,
-            position: "absolute",
-            top: '87%',
+            fontSize: 20,
+            top: "90%",
             left: "85%",
-            padding: 15,
-            width: 50,
-            alignItems: "center",
+            position: "absolute",
           }}
-        >
-          <IconSet
-            name={showConfirmPassword ? "eye-off" : "eye"}
-            onPress={toggleConfirmPasswordShown}
-            height={50}
-          />
-        </TouchableOpacity>
+        />
       </KeyboardAvoidingView>
     </View>
   );
