@@ -27,7 +27,7 @@ const phone = () => {
       {/* Form Section For Phone Number */}
       <KeyboardAvoidingView style={{ marginTop: 5 }}>
         {/* Full Name Input */}
-        <Text style={{ marginTop: 10 }}>
+        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
           Full Name <Text>*</Text>
         </Text>
         <TextInput
@@ -43,7 +43,7 @@ const phone = () => {
           placeholder="Full Name"
         />
         {/* Phone Number Input */}
-        <Text style={{ marginTop: 10 }}>
+        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
           Phone Number <Text>*</Text>
         </Text>
         <TextInput
@@ -60,7 +60,7 @@ const phone = () => {
           keyboardType="numeric"
         />
         {/* Password Input */}
-        <Text style={{ marginTop: 10 }}>
+        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
           Password <Text>*</Text>
         </Text>
         <TextInput
@@ -78,15 +78,20 @@ const phone = () => {
           onValueChange={setPassword}
           placeholder="Enter Password"
         />
-  
-          <IconSet
-            name={showPassword ? "eye-off" : "eye"}
-            onPress={togglePasswordShown}
-            style={{ position: "absolute", top: "65%", left: "85%", fontSize: 20, }}
-          />
-     
+
+        <IconSet
+          name={showPassword ? "eye-off" : "eye"}
+          onPress={togglePasswordShown}
+          style={{
+            position: "absolute",
+            top: "65%",
+            left: "85%",
+            fontSize: 20,
+          }}
+        />
+
         {/* Confirm Password Input */}
-        <Text style={{ marginTop: 10 }}>
+        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
           Confirm Password <Text>*</Text>
         </Text>
         <TextInput

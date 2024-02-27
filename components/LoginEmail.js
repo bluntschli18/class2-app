@@ -12,7 +12,7 @@ export default LoginEmail = () => {
   return (
     <View>
       {/* Input */}
-      <Text style={{ marginTop: 10 }}>
+      <Text style={{ marginTop: 10, fontWeight: "bold" }}>
         Email Address <Text>*</Text>
       </Text>
       <TextInput
@@ -30,7 +30,7 @@ export default LoginEmail = () => {
         onChangeEmail={onChangeEmail}
       />
       {/* Password Input */}
-      <Text style={{ marginTop: 10 }}>
+      <Text style={{ marginTop: 10, fontWeight: "bold" }}>
         Password <Text>*</Text>
       </Text>
       <TextInput

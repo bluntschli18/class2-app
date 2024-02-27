@@ -12,7 +12,7 @@ export default LoginPhone = () => {
   return (
     <View>
       {/* Phone Number Input */}
-      <Text style={{ marginTop: 10 }}>
+      <Text style={{ marginTop: 10, fontWeight: "bold" }}>
         Phone Number <Text>*</Text>
       </Text>
       <TextInput
@@ -30,7 +30,7 @@ export default LoginPhone = () => {
         onValueChange={onChangeNumber}
       />
       {/* Password Input */}
-      <Text style={{ marginTop: 10 }}>
+      <Text style={{ marginTop: 10, fontWeight: "bold" }}>
         Password <Text>*</Text>
       </Text>
       <TextInput
@@ -47,16 +47,16 @@ export default LoginPhone = () => {
         onValueChange={setPassword}
         placeholder="Enter Password"
       />
-     <IconSet
-          name={showPassword ? "eye-off" : "eye"}
-          onPress={togglePasswordShown}
-          style={{
-            position: "absolute",
-            fontSize: 20,
-            top: "80%",
-            left: "85%",
-          }}
-        />
+      <IconSet
+        name={showPassword ? "eye-off" : "eye"}
+        onPress={togglePasswordShown}
+        style={{
+          position: "absolute",
+          fontSize: 20,
+          top: "80%",
+          left: "85%",
+        }}
+      />
     </View>
   );
 };

@@ -81,7 +81,12 @@ const GetStarted_1 = () => {
             }}
             onPress={() => toggleHandler("Email")}
           >
-            <Text style={{ color: toggle == "Email" ? "white" : "red" }}>
+            <Text
+              style={{
+                color: toggle == "Email" ? "white" : "red",
+                fontWeight: "bold",
+              }}
+            >
               Email Address
             </Text>
           </TouchableOpacity>
@@ -99,7 +104,12 @@ const GetStarted_1 = () => {
             }}
             onPress={() => toggleHandler("Phone")}
           >
-            <Text style={{ color: toggle == "Phone" ? "white" : "red" }}>
+            <Text
+              style={{
+                color: toggle == "Phone" ? "white" : "red",
+                fontWeight: "bold",
+              }}
+            >
               Phone Number
             </Text>
           </TouchableOpacity>
@@ -118,6 +128,7 @@ const GetStarted_1 = () => {
             // flexWrap: "nowrap",
             width: "100%",
             paddingVertical: 10,
+            gap: 6,
             // alignItems: 'center',
           }}
         >
@@ -132,30 +143,30 @@ const GetStarted_1 = () => {
             style={{
               flexDirection: "row",
               // flexWrap: "wrap",
-              marginLeft: 3,
-              width: "100%",
               fontSize: 16,
               justifyContent: "space-evenly",
+              gap: 8,
+              //textAlign: "center",
             }}
           >
-            If you are creating a new account,
+            If you are creating a new account, {""}
             <Text
               onPress={() => Navigation.navigate()}
               style={{
                 color: "red",
                 fontSize: 16,
                 // flexWrap: "wrap",
-                marginHorizontal: 3,
+                paddingHorizontal: 5,
               }}
             >
               Terms & Conditions
             </Text>
-            and
+            {""} and {""}
             <Text
               onPress={() => Navigation.navigate()}
               style={{ color: "red", fontSize: 16, marginHorizontal: 3 }}
             >
-              Privacy Policy
+              Privacy Policy {""}
             </Text>
             will apply
           </Text>
@@ -186,7 +197,7 @@ const GetStarted_1 = () => {
           }}
         >
           <Text style={{ fontSize: 16, marginLeft: 2 }}>
-            Already have an account?
+            Already have an account? {""}
           </Text>
           <Text
             onPress={() => Navigation.navigate("Login")}

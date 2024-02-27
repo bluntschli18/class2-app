@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef  } from "react";
 import {
   KeyboardAvoidingView,
   View,
@@ -8,12 +8,13 @@ import {
   TouchableOpacity,
 } from "react-native";
 // import OTPInputView from "react-native-text-input-otp";
+// import HiddenTextInput, {handleOnBlur, useRef, useState, handleOnPress} from "./HiddenTextInput"
 import IconSet from "react-native-vector-icons/Ionicons";
 import { useNavigation } from "@react-navigation/native";
 
 export default OtpVerification = () => {
   const Navigation = useNavigation();
-  const [OTP, setOTP] = useState();
+  const [OTP, setOTP] = useState('');
   const [pinReady, setPINReady] = useState(false);
   const MAX_CODE_LENGTH = 1;
   const textInputRef = useRef(null);
@@ -23,16 +24,14 @@ export default OtpVerification = () => {
         style={styles.KeyboardAvoidingView}
         behavior="padding"
       >
-        <TouchableOpacity
-          style={styles.IconSetTouch}
-          onPress={() => Navigation.navigate("GetStarted")}
-        >
+        <View style={styles.IconView}>
           <IconSet
             style={styles.IconSet}
             name={"arrow-back"}
+            // name={"arrow-up"}
             onPress={() => Navigation.goBack()}
           />
-        </TouchableOpacity>
+        </View>
         <View style={styles.header}>
           <Text style={styles.headerText}>OTP Verification</Text>
           <Text style={styles.headerSubText}>
@@ -47,7 +46,7 @@ export default OtpVerification = () => {
               setPINReady={setPINReady}
               keyboardType="numeric"
               style={styles.TextInput}
-              onPress={styles.onPress}
+              // onPress={}
             />
             <TextInput
               maxLength={MAX_CODE_LENGTH}
@@ -56,7 +55,7 @@ export default OtpVerification = () => {
               setPINReady={setPINReady}
               keyboardType="numeric"
               style={styles.TextInput}
-              onPress={styles.onPress}
+              // onPress={}
             />
             <TextInput
               maxLength={MAX_CODE_LENGTH}
@@ -65,7 +64,7 @@ export default OtpVerification = () => {
               setPINReady={setPINReady}
               keyboardType="numeric"
               style={styles.TextInput}
-              onPress={styles.onPress}
+              // onPress={}
             />
             <TextInput
               maxLength={MAX_CODE_LENGTH}
@@ -74,11 +73,11 @@ export default OtpVerification = () => {
               setPINReady={setPINReady}
               keyboardType="numeric"
               style={styles.TextInput}
-              onPress={styles.onPress}
+              // onPress={}
             />
           </View>
           <View style={styles.beforeVerify}>
-            <Text style={styles.bFText} >00:30</Text>
+            <Text style={styles.bFText}>00:30</Text>
           </View>
           <View style={styles.verify}>
             <TouchableOpacity
@@ -106,8 +105,14 @@ export default OtpVerification = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    alignItems: "center",
+  IconView:{
+    alignSelf: "flex-start",
+    width: 50,
+    margin: 15,
+    // height: 50,
+    // justifyContent: "center",
+    // alignItems: "center",
+    // borderRadius: 25,
   },
   KeyboardAvoidingView: {
     alignItems: "center",
@@ -115,16 +120,13 @@ const styles = StyleSheet.create({
     width: "100%",
     padding: 20,
   },
-  IconSetTouch: {
-    width: 45,
-    marginTop: "10%",
-    marginBottom: 20,
-    alignSelf: "flex-start",
-  },
   IconSet: {
-    fontSize: 45,
+    fontSize: 30,
     fontWeight: "bold",
     width: 45,
+    marginTop: "5%",
+    // marginBottom: 16,
+    alignSelf: "flex-start",
   },
   header: {
     flex: 1,
@@ -169,10 +171,10 @@ const styles = StyleSheet.create({
     height: 60,
     borderRadius: 10,
   },
-  beforeVerify:{
+  beforeVerify: {
     marginVertical: 10,
   },
-  bFText:{
+  bFText: {
     fontSize: 16,
     fontWeight: "regular",
     color: "#000",
@@ -204,5 +206,5 @@ const styles = StyleSheet.create({
     fontWeight: "regular",
     color: "#000",
   },
-  endText: { color: "red", fontSize: 18, fontWeight: "bold", },
+  endText: { color: "red", fontSize: 18, fontWeight: "bold" },
 });

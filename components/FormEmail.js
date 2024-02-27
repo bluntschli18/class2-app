@@ -1,4 +1,10 @@
-import { Text, View, TextInput, TouchableOpacity, KeyboardAvoidingView } from "react-native";
+import {
+  Text,
+  View,
+  TextInput,
+  TouchableOpacity,
+  KeyboardAvoidingView,
+} from "react-native";
 import IconSet from "react-native-vector-icons/Ionicons";
 import { useState, useEffect } from "react";
 
@@ -18,8 +24,8 @@ const Email = () => {
   return (
     <View>
       {/* Form Section For Email */}
-      <KeyboardAvoidingView  style={{ marginTop: 5 }}>
-        <Text style={{ marginTop: 10 }}>
+      <KeyboardAvoidingView style={{ marginTop: 5 }}>
+        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
           Full Name <Text>*</Text>
         </Text>
         <TextInput
@@ -36,7 +42,7 @@ const Email = () => {
           keyboardType="ascii-capable"
         />
         {/* Input */}
-        <Text style={{ marginTop: 10 }}>
+        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
           Email Address <Text>*</Text>
         </Text>
         <TextInput
@@ -53,7 +59,7 @@ const Email = () => {
           keyboardType="email-address"
         />
         {/* Password Input */}
-        <Text style={{ marginTop: 10 }}>
+        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
           Password <Text>*</Text>
         </Text>
         <TextInput
@@ -72,13 +78,18 @@ const Email = () => {
           onValueChange={setPassword}
           placeholder="Enter Password"
         />
-      <IconSet
-            name={showPassword ? "eye-off" : "eye"}
-            onPress={togglePasswordShown}
-            style={{ position: "absolute", top: "65%", left: "85%", fontSize: 20, }}
-          />
+        <IconSet
+          name={showPassword ? "eye-off" : "eye"}
+          onPress={togglePasswordShown}
+          style={{
+            position: "absolute",
+            top: "65%",
+            left: "85%",
+            fontSize: 20,
+          }}
+        />
         {/* Confirm Password Input */}
-        <Text style={{ marginTop: 10 }}>
+        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
           Confirm Password <Text>*</Text>
         </Text>
         <TextInput
@@ -97,7 +108,7 @@ const Email = () => {
           placeholder="Confirm Password"
           keyboardType="ascii-capable-number-pad"
         />
-         <IconSet
+        <IconSet
           name={showConfirmPassword ? "eye-off" : "eye"}
           onPress={toggleConfirmPasswordShown}
           style={{

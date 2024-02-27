@@ -39,7 +39,12 @@ export default Login = () => {
             }}
             onPress={() => toggleHandler("Email")}
           >
-            <Text style={{ color: toggle == "Email" ? "white" : "red" }}>
+            <Text
+              style={{
+                color: toggle == "Email" ? "white" : "red",
+                fontWeight: "bold",
+              }}
+            >
               Email Address
             </Text>
           </TouchableOpacity>
@@ -57,7 +62,12 @@ export default Login = () => {
             }}
             onPress={() => toggleHandler("Phone")}
           >
-            <Text style={{ color: toggle == "Phone" ? "white" : "red" }}>
+            <Text
+              style={{
+                color: toggle == "Phone" ? "white" : "red",
+                fontWeight: "bold",
+              }}
+            >
               Phone Number
             </Text>
           </TouchableOpacity>
@@ -83,14 +93,19 @@ export default Login = () => {
             }}
             onPress={() => Navigation.navigate("Test")}
           >
-            <Text style={{ fontSize: 20, color: "white" }}>Login</Text>
+            <Text style={{ fontSize: 20, color: "white", fontWeight: "bold" }}>
+              Login
+            </Text>
           </TouchableOpacity>
           {/* The Login Botton Section Ends Here */}
           {/* Don't Have an account section */}
           <View style={styles.dontHave}>
             <Text style={{ fontSize: 15 }}>Don't have an account?</Text>
             <TouchableOpacity onPress={() => Navigation.navigate("GetStarted")}>
-              <Text style={{ color: "red", fontSize: 15 }}> SignUp </Text>
+              <Text style={{ color: "red", fontSize: 15, fontWeight: "bold" }}>
+                {" "}
+                SignUp{" "}
+              </Text>
             </TouchableOpacity>
           </View>
         </View>
