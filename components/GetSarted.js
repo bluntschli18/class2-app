@@ -49,7 +49,7 @@ const GetStarted_1 = () => {
       >
         {/* Main Input Section */}
         <View style={{ paddingTop: 10 }}>
-          <Text style={{ fontWeight: 700, fontSize: 24 }}>Get Started</Text>
+          <Text style={{ fontWeight: 800, fontSize: 24 }}>Get Started</Text>
           <Text style={{ fontWeight: 400, fontSize: 16 }}>
             Sign up today to start placing your order
           </Text>
@@ -124,29 +124,24 @@ const GetStarted_1 = () => {
         <View
           style={{
             flexDirection: "row",
-            // paddingHorizontal: 0,
-            // flexWrap: "nowrap",
             width: "100%",
             paddingVertical: 10,
             gap: 6,
-            // alignItems: 'center',
           }}
         >
           <Checkbox
             value={isChecked}
             onValueChange={setIsChecked}
             color={isChecked ? "red" : "red"}
-            background={isChecked ? "white" : "red"}
+            style={{ backgroundColor: isChecked ? "black" : "white" }}
           />
 
           <Text
             style={{
               flexDirection: "row",
-              // flexWrap: "wrap",
               fontSize: 16,
               justifyContent: "space-evenly",
               gap: 8,
-              //textAlign: "center",
             }}
           >
             If you are creating a new account, {""}

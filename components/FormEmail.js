@@ -35,7 +35,7 @@ const Email = () => {
             borderWidth: 2,
             borderColor: "gray",
             marginTop: 10,
-            padding: 5,
+            // padding: 5,
             paddingHorizontal: 15,
           }}
           placeholder="Full Name"
@@ -52,7 +52,7 @@ const Email = () => {
             borderWidth: 2,
             borderColor: "gray",
             marginTop: 10,
-            padding: 5,
+            // padding: 5,
             paddingHorizontal: 15,
           }}
           placeholder="Email Address"
@@ -69,7 +69,7 @@ const Email = () => {
             borderWidth: 2,
             borderColor: "gray",
             marginTop: 10,
-            padding: 5,
+            // padding: 5,
             paddingHorizontal: 15,
           }}
           keyboardType="ascii-capable-number-pad"
@@ -99,7 +99,7 @@ const Email = () => {
             borderWidth: 2,
             borderColor: "gray",
             marginTop: 10,
-            padding: 5,
+            // padding: 5,
             paddingHorizontal: 15,
           }}
           secureTextEntry={!showConfirmPassword}

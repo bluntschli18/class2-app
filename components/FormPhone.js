@@ -37,7 +37,7 @@ const phone = () => {
             borderWidth: 2,
             borderColor: "gray",
             marginTop: 10,
-            padding: 5,
+            // padding: 5,
             paddingHorizontal: 15,
           }}
           placeholder="Full Name"
@@ -53,7 +53,7 @@ const phone = () => {
             borderWidth: 2,
             borderColor: "gray",
             marginTop: 10,
-            padding: 5,
+            // padding: 5,
             paddingHorizontal: 15,
           }}
           placeholder="Phone Number"
@@ -70,7 +70,7 @@ const phone = () => {
             borderWidth: 2,
             borderColor: "gray",
             marginTop: 10,
-            padding: 5,
+            // padding: 5,
             paddingHorizontal: 15,
           }}
           secureTextEntry={!showPassword}
@@ -101,7 +101,7 @@ const phone = () => {
             borderWidth: 2,
             borderColor: "gray",
             marginTop: 10,
-            padding: 5,
+            // padding: 5,
             paddingHorizontal: 15,
           }}
           secureTextEntry={!showConfirmPassword}
