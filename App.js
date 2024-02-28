@@ -61,8 +61,16 @@ const App = () => {
           component={PropTest}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name='OtpVerification' component={OtpVerification} options={{headerShown: false}} />
-        <Stack.Screen name='Verified' component={Verified} options={{headerShown: false}} />
+        <Stack.Screen
+          name="OtpVerification"
+          component={OtpVerification}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Verified"
+          component={Verified}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

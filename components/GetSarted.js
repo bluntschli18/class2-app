@@ -146,7 +146,7 @@ const GetStarted_1 = () => {
           >
             If you are creating a new account, {""}
             <Text
-              onPress={() => Navigation.navigate()}
+              onPress={() => Alert.alert("Coming Soon")}
               style={{
                 color: "red",
                 fontSize: 16,
@@ -158,7 +158,7 @@ const GetStarted_1 = () => {
             </Text>
             {""} and {""}
             <Text
-              onPress={() => Navigation.navigate()}
+              onPress={() => Alert.alert("Coming Soon")}
               style={{ color: "red", fontSize: 16, marginHorizontal: 3 }}
             >
               Privacy Policy {""}
