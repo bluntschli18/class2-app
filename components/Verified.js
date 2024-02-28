@@ -1,4 +1,4 @@
-import { Text, StyleSheet, View, Image, TouchableOpacity } from "react-native";
+import { Text, StyleSheet, View, Image, TouchableOpacity, Alert } from "react-native";
 import React, { Component } from "react";
 
 export default class Verified extends Component {
@@ -17,7 +17,7 @@ export default class Verified extends Component {
 
         <TouchableOpacity
           style={styles.touch}
-          onPress={() => this.props.navigation.navigate("")}
+          onPress={() => Alert.alert("Coming Soon! Dev team is on their way")}
         >
           <Text style={{ fontSize: 20, color: "white", fontWeight: 'bold' }}>Add Address</Text>
         </TouchableOpacity>

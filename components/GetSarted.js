@@ -134,6 +134,7 @@ const GetStarted_1 = () => {
             onValueChange={setIsChecked}
             color={isChecked ? "red" : "red"}
             style={{ backgroundColor: isChecked ? "black" : "white" }}
+            backgroundColor={isChecked ? "black" : "white"}
           />
 
           <Text
@@ -146,7 +147,11 @@ const GetStarted_1 = () => {
           >
             If you are creating a new account, {""}
             <Text
-              onPress={() => Alert.alert("Coming Soon")}
+              onPress={() =>
+                Alert.alert(
+                  "Coming Soon, We are updating our Terms & Conditions"
+                )
+              }
               style={{
                 color: "red",
                 fontSize: 16,
@@ -158,7 +163,9 @@ const GetStarted_1 = () => {
             </Text>
             {""} and {""}
             <Text
-              onPress={() => Alert.alert("Coming Soon")}
+              onPress={() =>
+                Alert.alert("Coming Soon, We are updating our Privacy Policy")
+              }
               style={{ color: "red", fontSize: 16, marginHorizontal: 3 }}
             >
               Privacy Policy {""}
