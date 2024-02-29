@@ -1,4 +1,4 @@
-import React, { useState, useRef  } from "react";
+import React, { useState, useRef } from "react";
 import {
   KeyboardAvoidingView,
   View,
@@ -36,7 +36,7 @@ export default OtpVerification = () => {
           <Text style={styles.headerText}>OTP Verification</Text>
           <Text style={styles.headerSubText}>
             Thank you for signing up, Enter the 4-digit code we sent via the
-            phone number {}
+            phone number { }
           </Text>
           <View style={styles.body}>
             <TextInput
@@ -46,7 +46,7 @@ export default OtpVerification = () => {
               setPINReady={setPINReady}
               keyboardType="numeric"
               style={styles.TextInput}
-              // onPress={}
+            // onPress={}
             />
             <TextInput
               maxLength={MAX_CODE_LENGTH}
@@ -55,7 +55,7 @@ export default OtpVerification = () => {
               setPINReady={setPINReady}
               keyboardType="numeric"
               style={styles.TextInput}
-              // onPress={}
+            // onPress={}
             />
             <TextInput
               maxLength={MAX_CODE_LENGTH}
@@ -64,7 +64,7 @@ export default OtpVerification = () => {
               setPINReady={setPINReady}
               keyboardType="numeric"
               style={styles.TextInput}
-              // onPress={}
+            // onPress={}
             />
             <TextInput
               maxLength={MAX_CODE_LENGTH}
@@ -73,7 +73,7 @@ export default OtpVerification = () => {
               setPINReady={setPINReady}
               keyboardType="numeric"
               style={styles.TextInput}
-              // onPress={}
+            // onPress={}
             />
           </View>
           <View style={styles.beforeVerify}>
@@ -92,7 +92,7 @@ export default OtpVerification = () => {
               <Text style={styles.firstEndText}>Didn't recieve a code?</Text>
               <TouchableOpacity
                 styles={styles.touchableOpacity}
-                onPress={() => {}}
+                onPress={() => { }}
               >
                 <Text style={styles.endText}>Resend code</Text>
               </TouchableOpacity>
@@ -105,7 +105,7 @@ export default OtpVerification = () => {
 };
 
 const styles = StyleSheet.create({
-  IconView:{
+  IconView: {
     alignSelf: "flex-start",
     width: 50,
     margin: 15,

@@ -20,10 +20,6 @@ const GetStarted_1 = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [toggle, setToggle] = useState("Email");
 
-  const toggleHandler = (next) => {
-    setToggle(next);
-  };
-
   // useEffect(() => {
   //   Alert.alert(`Toggle has changed to ${toggle}`);
   // });
@@ -79,7 +75,7 @@ const GetStarted_1 = () => {
               backgroundColor: toggle == "Email" ? "red" : "white",
               height: "100%",
             }}
-            onPress={() => toggleHandler("Email")}
+            onPress={() => setToggle("Email")}
           >
             <Text
               style={{
@@ -102,7 +98,7 @@ const GetStarted_1 = () => {
               backgroundColor: toggle == "Phone" ? "red" : "white",
               height: "100%",
             }}
-            onPress={() => toggleHandler("Phone")}
+            onPress={() => setToggle("Phone")}
           >
             <Text
               style={{

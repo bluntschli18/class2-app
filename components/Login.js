@@ -8,10 +8,6 @@ export default Login = () => {
   const Navigation = useNavigation();
 
   const [toggle, setToggle] = useState("Email");
-
-  const toggleHandler = (next) => {
-    setToggle(next);
-  };
   return (
     <View style={styles.container}>
       <Image
@@ -37,7 +33,7 @@ export default Login = () => {
               backgroundColor: toggle == "Email" ? "red" : "white",
               height: 56,
             }}
-            onPress={() => toggleHandler("Email")}
+            onPress={() => setToggle("Email")}
           >
             <Text
               style={{
@@ -60,7 +56,7 @@ export default Login = () => {
               backgroundColor: toggle == "Phone" ? "red" : "white",
               height: 56,
             }}
-            onPress={() => toggleHandler("Phone")}
+            onPress={() => setToggle("Phone")}
           >
             <Text
               style={{

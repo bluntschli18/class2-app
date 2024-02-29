@@ -32,27 +32,21 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: "100%",
     width: "100%",
-    // backgroundColor: "black",
   },
   Image: {
     height: "25%",
     width: "70%",
     margin: 20,
-    // alignSelf: "center",
-    // marginTop: 100,
   },
   ContText: {
     fontSize: 30,
     fontWeight: "bold",
     marginVertical: 15,
-    // alignSelf: "center",
-    // marginTop: 100,
+
   },
   SubText: {
     fontSize: 20,
     fontWeight: "regular",
-    // alignSelf: "center",
-    // marginTop: 100,
     width: "80%",
     textAlign: "center",
     justifyContent: "space-evenly",

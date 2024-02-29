@@ -9,14 +9,14 @@ import IconSet from "react-native-vector-icons/Ionicons";
 import { useState, useEffect } from "react";
 
 const phone = () => {
-  // Code lin for Password
+  // Code line for Password
   const [Password, setPassword] = useState();
   const [showPassword, setPasswordShown] = useState(false);
   const togglePasswordShown = () => {
     setPasswordShown(!showPassword);
   };
 
-  // Code lin for Confirm Password
+  // Code line for Confirm Password
   const [confirmPassword, setConfirmPassword] = useState();
   const [showConfirmPassword, setConfirmPasswordShown] = useState(false);
   const toggleConfirmPasswordShown = () => {

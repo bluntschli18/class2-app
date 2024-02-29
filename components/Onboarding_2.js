@@ -13,7 +13,6 @@ const Onboarding_2 = () => {
         style={{
           marginTop: "15%",
           height: "4%",
-          // backgroundColor: "blue",
           width: "20%",
           alignSelf: "flex-end",
         }}
