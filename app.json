@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "class2-app",
-    "slug": "class2-app",
+    "name": "Test",
+    "slug": "Lock",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/15-1-removebg.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/15-1-removebg.png",
@@ -19,7 +19,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/15-1-removebg.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.danielsmond443.class2app"
