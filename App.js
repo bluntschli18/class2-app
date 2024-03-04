@@ -1,7 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-const Stack = createNativeStackNavigator();
 import Onboarding_1 from "./components/Onboarding-1";
 import Onboarding_3 from "./components/Onboarding_3";
 import Onboarding_2 from "./components/Onboarding_2";
@@ -17,6 +16,7 @@ import Verified from "./components/Verified";
 // rnfes is a shortcut for creating your react-native application entry point without typing anything
 
 const App = () => {
+  const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator>

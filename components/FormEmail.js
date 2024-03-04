@@ -79,7 +79,7 @@ const Email = () => {
           placeholder="Enter Password"
         />
         <IconSet
-          name={showPassword ? "eye-off" : "eye"}
+          name={showPassword ? "eye" : "eye-off"}
           onPress={togglePasswordShown}
           style={{
             position: "absolute",
@@ -109,7 +109,7 @@ const Email = () => {
           keyboardType="ascii-capable-number-pad"
         />
         <IconSet
-          name={showConfirmPassword ? "eye-off" : "eye"}
+          name={showConfirmPassword ? "eye" : "eye-off"}
           onPress={toggleConfirmPasswordShown}
           style={{
             fontSize: 20,

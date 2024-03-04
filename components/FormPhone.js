@@ -37,7 +37,6 @@ const phone = () => {
             borderWidth: 2,
             borderColor: "gray",
             marginTop: 10,
-            // padding: 5,
             paddingHorizontal: 15,
           }}
           placeholder="Full Name"
@@ -53,7 +52,6 @@ const phone = () => {
             borderWidth: 2,
             borderColor: "gray",
             marginTop: 10,
-            // padding: 5,
             paddingHorizontal: 15,
           }}
           placeholder="Phone Number"
@@ -70,7 +68,6 @@ const phone = () => {
             borderWidth: 2,
             borderColor: "gray",
             marginTop: 10,
-            // padding: 5,
             paddingHorizontal: 15,
           }}
           secureTextEntry={!showPassword}
@@ -80,7 +77,7 @@ const phone = () => {
         />
 
         <IconSet
-          name={showPassword ? "eye-off" : "eye"}
+          name={showPassword ? "eye" : "eye-off"}
           onPress={togglePasswordShown}
           style={{
             position: "absolute",
@@ -101,18 +98,17 @@ const phone = () => {
             borderWidth: 2,
             borderColor: "gray",
             marginTop: 10,
-            // padding: 5,
             paddingHorizontal: 15,
           }}
           secureTextEntry={!showConfirmPassword}
           value={confirmPassword}
           onValueChange={setConfirmPassword}
           placeholder="Confirm Password"
-          right={{}}
+          // right={{}}
         />
 
         <IconSet
-          name={showConfirmPassword ? "eye-off" : "eye"}
+          name={showConfirmPassword ? "eye" : "eye-off"}
           onPress={toggleConfirmPasswordShown}
           style={{
             fontSize: 20,

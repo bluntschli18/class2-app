@@ -129,7 +129,7 @@ const GetStarted_1 = () => {
             value={isChecked}
             onValueChange={setIsChecked}
             color={isChecked ? "red" : "red"}
-            style={{ backgroundColor: isChecked ? "black" : "white" }}
+            // style={{ backgroundColor: isChecked ? "black" : "white" }}
             backgroundColor={isChecked ? "black" : "white"}
           />
 
@@ -151,8 +151,6 @@ const GetStarted_1 = () => {
               style={{
                 color: "red",
                 fontSize: 16,
-                // flexWrap: "wrap",
-                paddingHorizontal: 5,
               }}
             >
               Terms & Conditions
