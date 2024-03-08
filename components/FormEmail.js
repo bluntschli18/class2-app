@@ -22,10 +22,8 @@ const Email = () => {
     setConfirmPasswordShown(!showConfirmPassword);
   };
   return (
-    <View>
-      {/* Form Section For Email */}
-      <KeyboardAvoidingView style={{ marginTop: 5 }}>
-        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
+      <View style={{ marginTop: 5 }}>
+        <Text style={{ marginTop: 5, fontWeight: "bold" }}>
           Full Name <Text>*</Text>
         </Text>
         <TextInput
@@ -34,7 +32,7 @@ const Email = () => {
             borderRadius: 9,
             borderWidth: 2,
             borderColor: "gray",
-            marginTop: 10,
+            marginTop: 5,
             // padding: 5,
             paddingHorizontal: 15,
           }}
@@ -42,7 +40,7 @@ const Email = () => {
           keyboardType="ascii-capable"
         />
         {/* Input */}
-        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
+        <Text style={{ marginTop: 5, fontWeight: "bold" }}>
           Email Address <Text>*</Text>
         </Text>
         <TextInput
@@ -51,7 +49,7 @@ const Email = () => {
             borderRadius: 9,
             borderWidth: 2,
             borderColor: "gray",
-            marginTop: 10,
+            marginTop: 5,
             // padding: 5,
             paddingHorizontal: 15,
           }}
@@ -59,7 +57,7 @@ const Email = () => {
           keyboardType="email-address"
         />
         {/* Password Input */}
-        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
+        <Text style={{ marginTop: 5, fontWeight: "bold" }}>
           Password <Text>*</Text>
         </Text>
         <TextInput
@@ -68,7 +66,7 @@ const Email = () => {
             borderRadius: 9,
             borderWidth: 2,
             borderColor: "gray",
-            marginTop: 10,
+            marginTop: 5,
             // padding: 5,
             paddingHorizontal: 15,
           }}
@@ -89,7 +87,7 @@ const Email = () => {
           }}
         />
         {/* Confirm Password Input */}
-        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
+        <Text style={{ marginTop: 5, fontWeight: "bold" }}>
           Confirm Password <Text>*</Text>
         </Text>
         <TextInput
@@ -98,7 +96,7 @@ const Email = () => {
             borderRadius: 9,
             borderWidth: 2,
             borderColor: "gray",
-            marginTop: 10,
+            marginTop: 5,
             // padding: 5,
             paddingHorizontal: 15,
           }}
@@ -118,8 +116,7 @@ const Email = () => {
             position: "absolute",
           }}
         />
-      </KeyboardAvoidingView>
-    </View>
+      </View>
   );
 };
 

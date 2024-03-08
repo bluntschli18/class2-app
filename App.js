@@ -5,12 +5,10 @@ import Onboarding_1 from "./components/Onboarding-1";
 import Onboarding_3 from "./components/Onboarding_3";
 import Onboarding_2 from "./components/Onboarding_2";
 import Location from "./components/Location";
-//import Duolingo from "./components/Duolingo";
 import GetStarted from "./components/GetSarted";
 import Login from "./components/Login";
-import Test from "./components/Test";
 import OtpVerification from "./components/OtpVerification";
-import PropTest from "./components/PropTest";
+// import PropTest from "./components/PropTest";
 import Verified from "./components/Verified";
 
 // rnfes is a shortcut for creating your react-native application entry point without typing anything
@@ -46,21 +44,21 @@ const App = () => {
           options={{ headerShown: false }}
         />
         {/* <Stack.Screen name="Duolingo" component={Duolingo} /> */}
-        <Stack.Screen
+        {/* <Stack.Screen
           name="Test"
           component={Test}
           options={{ headerShown: false }}
-        />
+        /> */}
         <Stack.Screen
           name="Login"
           component={Login}
           options={{ headerShown: false }}
         />
-        <Stack.Screen
+        {/* <Stack.Screen
           name="proptest"
           component={PropTest}
           options={{ headerShown: false }}
-        />
+        /> */}
         <Stack.Screen
           name="OtpVerification"
           component={OtpVerification}

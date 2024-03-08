@@ -23,11 +23,9 @@ const phone = () => {
     setConfirmPasswordShown(!showConfirmPassword);
   };
   return (
-    <View style={{}}>
-      {/* Form Section For Phone Number */}
-      <KeyboardAvoidingView style={{ marginTop: 5 }}>
+      <View style={{ marginTop: 5 }}>
         {/* Full Name Input */}
-        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
+        <Text style={{ marginTop: 5, fontWeight: "bold" }}>
           Full Name <Text>*</Text>
         </Text>
         <TextInput
@@ -36,13 +34,13 @@ const phone = () => {
             borderRadius: 9,
             borderWidth: 2,
             borderColor: "gray",
-            marginTop: 10,
+            marginTop: 5,
             paddingHorizontal: 15,
           }}
           placeholder="Full Name"
         />
         {/* Phone Number Input */}
-        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
+        <Text style={{ marginTop: 5, fontWeight: "bold" }}>
           Phone Number <Text>*</Text>
         </Text>
         <TextInput
@@ -51,14 +49,14 @@ const phone = () => {
             borderRadius: 9,
             borderWidth: 2,
             borderColor: "gray",
-            marginTop: 10,
+            marginTop: 5,
             paddingHorizontal: 15,
           }}
           placeholder="Phone Number"
           keyboardType="numeric"
         />
         {/* Password Input */}
-        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
+        <Text style={{ marginTop: 5, fontWeight: "bold" }}>
           Password <Text>*</Text>
         </Text>
         <TextInput
@@ -67,7 +65,7 @@ const phone = () => {
             borderRadius: 9,
             borderWidth: 2,
             borderColor: "gray",
-            marginTop: 10,
+            marginTop: 5,
             paddingHorizontal: 15,
           }}
           secureTextEntry={!showPassword}
@@ -88,7 +86,7 @@ const phone = () => {
         />
 
         {/* Confirm Password Input */}
-        <Text style={{ marginTop: 10, fontWeight: "bold" }}>
+        <Text style={{ marginTop: 5, fontWeight: "bold" }}>
           Confirm Password <Text>*</Text>
         </Text>
         <TextInput
@@ -97,7 +95,7 @@ const phone = () => {
             borderRadius: 9,
             borderWidth: 2,
             borderColor: "gray",
-            marginTop: 10,
+            marginTop: 5,
             paddingHorizontal: 15,
           }}
           secureTextEntry={!showConfirmPassword}
@@ -117,8 +115,7 @@ const phone = () => {
             position: "absolute",
           }}
         />
-      </KeyboardAvoidingView>
-    </View>
+      </View>
   );
 };
 export default phone;
