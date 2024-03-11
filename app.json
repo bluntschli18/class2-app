@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Test",
-    "slug": "class2-app",
+    "name": "Food-Fetch",
+    "slug": "Food-Fetch",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/15-1-removebg.png",

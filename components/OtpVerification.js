@@ -6,6 +6,7 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
+  Alert,
 } from "react-native";
 // import OTPInputView from "react-native-text-input-otp";
 // import HiddenTextInput, {handleOnBlur, useRef, useState, handleOnPress} from "./HiddenTextInput"
@@ -92,7 +93,7 @@ export default OtpVerification = () => {
               <Text style={styles.firstEndText}>Didn't recieve a code?</Text>
               <TouchableOpacity
                 styles={styles.touchableOpacity}
-                onPress={() => { }}
+                onPress={() => Alert.alert("Coming Soon")}
               >
                 <Text style={styles.endText}>Resend code</Text>
               </TouchableOpacity>
@@ -132,12 +133,12 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   headerText: {
-    fontSize: 30,
+    fontSize: 25,
     fontWeight: "bold",
     color: "#000",
   },
   headerSubText: {
-    fontSize: 18,
+    fontSize: 14,
     fontWeight: "regular",
     marginVertical: 10,
   },
@@ -175,7 +176,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   bFText: {
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: "regular",
     color: "#000",
     textAlign: "center",
@@ -202,9 +203,9 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   firstEndText: {
-    fontSize: 18,
+    fontSize: 12,
     fontWeight: "regular",
     color: "#000",
   },
-  endText: { color: "red", fontSize: 18, fontWeight: "bold" },
+  endText: { color: "red", fontSize: 12, fontWeight: "bold" },
 });

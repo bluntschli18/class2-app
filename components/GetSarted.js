@@ -19,24 +19,19 @@ import Checkbox from "expo-checkbox";
 const GetStarted_1 = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [toggle, setToggle] = useState("Email");
-
-  // useEffect(() => {
-  //   Alert.alert(`Toggle has changed to ${toggle}`);
-  // });
-
   const Navigation = useNavigation();
   return (
-    <KeyboardAvoidingView style={{ height: "100%", backgroundColor: "red" }}>
+    <View style={{ height: "100%", backgroundColor: "red" }}>
       {/* NavBar Section */}
       <Image
         source={require("./../assets/15-1-removebg.png")}
-        style={{ height: "7%", width: 90, margin: 10, opacity: 90 }}
+        style={{ height: "10%", width: 90, margin: 10 }}
       />
       {/* Main Section */}
       <View
         style={{
           backgroundColor: "white",
-          height: "93%",
+          height: "90%",
           paddingHorizontal: 20,
           paddingVertical: 10,
           borderTopLeftRadius: 20,
@@ -44,12 +39,10 @@ const GetStarted_1 = () => {
         }}
       >
         {/* Main Input Section */}
-        <View style={{ paddingTop: 10 }}>
-          <Text style={{ fontWeight: 800, fontSize: 24 }}>Get Started</Text>
-          <Text style={{ fontWeight: 400, fontSize: 16 }}>
-            Sign up today to start placing your order
-          </Text>
-        </View>
+        <Text style={{ fontWeight: 800, fontSize: 20 }}>Get Started</Text>
+        <Text style={{ fontWeight: 400, fontSize: 10 }}>
+          Sign up today to start placing your order
+        </Text>
         {/* Toggle Section */}
         {/* Input Section */}
         <View
@@ -58,7 +51,7 @@ const GetStarted_1 = () => {
             borderRadius: 10,
             borderColor: "red",
             borderWidth: 2,
-            marginTop: 15,
+            marginTop: 10,
             height: 60,
           }}
         >
@@ -112,9 +105,7 @@ const GetStarted_1 = () => {
         </View>
 
         {/* Toggle Section */}
-        <KeyboardAvoidingView>
-          {toggle == "Phone" ? <FormPhone /> : <FormEmail />}
-        </KeyboardAvoidingView>
+        {toggle == "Phone" ? <FormPhone /> : <FormEmail />}
 
         {/* Checkbox View  */}
         <View
@@ -129,14 +120,12 @@ const GetStarted_1 = () => {
             value={isChecked}
             onValueChange={setIsChecked}
             color={isChecked ? "red" : "red"}
-            // style={{ backgroundColor: isChecked ? "black" : "white" }}
-            backgroundColor={isChecked ? "black" : "white"}
           />
 
           <Text
             style={{
               flexDirection: "row",
-              fontSize: 16,
+              fontSize: 12,
               justifyContent: "space-evenly",
               gap: 8,
             }}
@@ -150,7 +139,7 @@ const GetStarted_1 = () => {
               }
               style={{
                 color: "red",
-                fontSize: 16,
+                fontSize: 12,
               }}
             >
               Terms & Conditions
@@ -160,7 +149,7 @@ const GetStarted_1 = () => {
               onPress={() =>
                 Alert.alert("Coming Soon, We are updating our Privacy Policy")
               }
-              style={{ color: "red", fontSize: 16, marginHorizontal: 3 }}
+              style={{ color: "red", fontSize: 12, marginHorizontal: 3 }}
             >
               Privacy Policy {""}
             </Text>
@@ -192,7 +181,7 @@ const GetStarted_1 = () => {
             gap: 10,
           }}
         >
-          <Text style={{ fontSize: 16, marginLeft: 2 }}>
+          <Text style={{ fontSize: 12, marginLeft: 2 }}>
             Already have an account? {""}
           </Text>
           <Text
@@ -200,7 +189,7 @@ const GetStarted_1 = () => {
             style={{
               textAlign: "center",
               color: "red",
-              fontSize: 16,
+              fontSize: 12,
               marginLeft: 2,
               fontWeight: "bold",
             }}
@@ -209,7 +198,7 @@ const GetStarted_1 = () => {
           </Text>
         </Text>
       </View>
-    </KeyboardAvoidingView>
+    </View>
   );
 };
 

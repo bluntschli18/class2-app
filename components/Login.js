@@ -96,13 +96,11 @@ export default Login = () => {
           {/* The Login Botton Section Ends Here */}
           {/* Don't Have an account section */}
           <View style={styles.dontHave}>
-            <Text style={{ fontSize: 15 }}>Don't have an account?</Text>
-            <TouchableOpacity onPress={() => Navigation.navigate("GetStarted")}>
-              <Text style={{ color: "red", fontSize: 15, fontWeight: "bold" }}>
-                {" "}
-                SignUp{" "}
-              </Text>
-            </TouchableOpacity>
+            <Text style={{ fontSize: 12 }}>Don't have an account?</Text>
+            <Text onPress={() => Navigation.navigate("GetStarted")} style={{ color: "red", fontSize: 12, fontWeight: "bold" }}>
+              {" "}
+              SignUp{" "}
+            </Text>
           </View>
         </View>
       </View>

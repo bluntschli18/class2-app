@@ -33,24 +33,23 @@ const Onboarding_2 = () => {
       <View
         style={{
           alignItems: "center",
-          justifyContent: "center",
+          marginTop: "5%",
           height: "90%",
           width: "100%",
         }}
       >
         <Image
           style={{
-            margin: "16%",
-            marginBottom: "22%",
-            height: "35%",
-            width: "68%",
+            marginTop: 80,
+            height: 300,
+            width: 300,
           }}
           source={require("./../assets/cuizines-removebg-preview.png")}
         />
         <View style={{width:'100%'}}>
           <Text
             style={{
-              marginTop: 50,
+              marginTop: 100,
               textAlign: "center",
               fontSize: 20,
               fontWeight: 900,
@@ -61,9 +60,9 @@ const Onboarding_2 = () => {
 
           <Text
             style={{
-              marginTop: "3%",
-              fontSize: 14,
-              width: "80%",
+              marginTop: 20,
+              fontSize: 12,
+              width: "90%",
               fontWeight: 400,
               textAlign: "center",
               alignSelf: "center",
@@ -83,7 +82,7 @@ const Onboarding_2 = () => {
               alignItems: "center",
               justifyContent: "center",
               borderRadius: 10,
-              marginTop: "13%",
+              marginTop: 45,
             }}
             onPress={() => Navigation.navigate("Onboarding-3")}
           >

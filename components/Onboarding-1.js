@@ -41,8 +41,8 @@ const Onboarding_1 = () => {
       >
         <Image
           style={{
-            height: "43%",
-            width: "75%",
+            height: 300,
+            width: 300,
             margin: "17%",
             marginBottom: "10%",
           }}
@@ -57,14 +57,14 @@ const Onboarding_1 = () => {
             width: "90%",
           }}
         >
-          <Text style={{ marginTop: 55, fontSize: 20, fontWeight: 900 }}>
+          <Text style={{ marginTop: 65, fontSize: 20, fontWeight: 900 }}>
             Quench your craving
           </Text>
           <Text
             style={{
               marginTop: "3%",
               textAlign: "center",
-              fontSize: 15,
+              fontSize: 12,
               fontWeight: 400,
               width: "90%",
               alignItems: "center",

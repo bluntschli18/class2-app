@@ -12,11 +12,11 @@ const Location = () => {
     >
       <Text
         style={{
-          height: "10%",
+          height: "5%",
           fontWeight: 600,
           fontSize: 20,
           alignSelf:'center',
-          marginTop: "30%",
+          marginTop: 110,
         }}
       >
         Explore Restaurants Nearby
@@ -35,20 +35,20 @@ const Location = () => {
             alignSelf: "center",
             width: "20%",
             height: "20%",
-            marginTop: "28%",
+            marginTop: 205,
           }}
           source={require("./../assets/location-removebg-preview.png")}
         />
         <Text
           style={{
-            marginTop: "10%",
+            marginTop: 30,
             textAlign: "center",
             fontWeight: "regular",
-            fontSize: 13,
+            fontSize: 12,
             color: "black",
             // padding: 5,
             alignSelf: "center",
-            width: "90%",
+            width: "95%",
           }}
         >
           By granting permission, you can search for restaurants around you and
@@ -58,7 +58,7 @@ const Location = () => {
           style={{
             height: 60,
             width: "90%",
-            marginTop: "10%",
+            marginTop: 30,
             alignItems: "center",
             justifyContent: "center",
             backgroundColor: "red",

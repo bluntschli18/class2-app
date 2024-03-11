@@ -19,7 +19,7 @@ export default class Verified extends Component {
           style={styles.touch}
           onPress={() => Alert.alert("Coming Soon! Dev team is on their way")}
         >
-          <Text style={{ fontSize: 20, color: "white", fontWeight: 'bold' }}>Add Address</Text>
+          <Text style={{ fontSize: 20, color: "white", fontWeight: 'bold', textAlign:"center" }}>Add Address</Text>
         </TouchableOpacity>
       </View>
     );
@@ -34,18 +34,18 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   Image: {
-    height: "25%",
-    width: "70%",
+    height: 200,
+    width: 200,
     margin: 20,
   },
   ContText: {
-    fontSize: 30,
+    fontSize: 16,
     fontWeight: "bold",
     marginVertical: 15,
 
   },
   SubText: {
-    fontSize: 20,
+    fontSize: 12,
     fontWeight: "regular",
     width: "80%",
     textAlign: "center",

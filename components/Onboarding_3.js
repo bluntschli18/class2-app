@@ -29,7 +29,7 @@ const Onboarding_3 = () => {
       <TouchableOpacity
         style={{
           marginTop: "5%",
-          marginBottom: "10%",
+          marginBottom: 15,
           borderWidth: 1,
           alignItems: "center",
           justifyContent: "center",
