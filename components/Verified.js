@@ -1,30 +1,34 @@
 import { Text, StyleSheet, View, Image, TouchableOpacity, Alert } from "react-native";
 import React, { Component } from "react";
+import { useNavigation } from "@react-navigation/native";
 
-export default class Verified extends Component {
-  render() {
-    return (
-      <View style={styles.vContainer}>
-        <Image
-          style={styles.Image}
-          source={require("./../assets/Male Memojis.png")}
-        />
-        <Text style={styles.ContText}>You Are doing well</Text>
-        <Text style={styles.SubText}>
-          Congratulations! Your account has been successfully created. You're
-          now ready to embark on a delicious journey with foodie delight
-        </Text>
 
-        <TouchableOpacity
-          style={styles.touch}
-          onPress={() => Alert.alert("Coming Soon! Dev team is on their way")}
-        >
-          <Text style={{ fontSize: 20, color: "white", fontWeight: 'bold', textAlign:"center" }}>Add Address</Text>
-        </TouchableOpacity>
-      </View>
-    );
-  }
-}
+
+export default verified = () => {
+
+  const Navigation = useNavigation();
+  return (
+    <View style={styles.vContainer}>
+      <Image
+        style={styles.Image}
+        source={require("./../assets/Male Memojis.png")}
+      />
+      <Text style={styles.ContText}>You Are doing well</Text>
+      <Text style={styles.SubText}>
+        Congratulations! Your account has been successfully created. You're
+        now ready to embark on a delicious journey with foodie delight
+      </Text>
+
+      <TouchableOpacity
+        style={styles.touch}
+        // onPress={() => Navigation.navigate("HomeScreen")}
+      onPress={() => Alert.alert("Coming Soon! Dev team is on their way")}
+      >
+        <Text style={{ fontSize: 20, color: "white", fontWeight: 'bold', textAlign: "center" }}>Add Address</Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   vContainer: {

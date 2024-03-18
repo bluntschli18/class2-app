@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity, Alert } from "react-native";
 import { React, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import LoginEmail from "./LoginEmail";
@@ -87,7 +87,7 @@ export default Login = () => {
               height: 60,
               borderRadius: 10,
             }}
-            onPress={() => Navigation.navigate("Test")}
+            onPress={() => Alert.alert("Create a new account...")}
           >
             <Text style={{ fontSize: 20, color: "white", fontWeight: "bold" }}>
               Login
