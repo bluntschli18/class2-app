@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { formDataAtom } from "./../theAtom/formAtom";
+import { formDataAtom } from "../theAtom/formAtom";
 import { useAtom } from "jotai";
 
 export default ProfileScreen = () => {
@@ -8,11 +8,9 @@ export default ProfileScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text>Welcome {formData.fullName}</Text>
+      <Text>Welcome {formData.firstName}</Text>
       <Text>Email: {formData.email}</Text>
-      <Text>Phone: {formData.phone}</Text>
       <Text>Address: {formData.address}</Text>
-      <Text>City: {formData.city}</Text>
       <Text>You told us your Last Name was: {formData.lastName}</Text>
     </View>
   );

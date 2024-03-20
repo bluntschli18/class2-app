@@ -8,5 +8,3 @@ export default ServicesScreen = () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({});

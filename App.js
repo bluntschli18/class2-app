@@ -17,75 +17,75 @@ import ProfileScreen from "./screens/ProfileScreen";
 import ServicesScreen from "./screens/ServicesScreen";
 import Ionicons from "react-native-vector-icons/Ionicons";
 // rnfes is a shortcut for creating your react-native application entry point without typing anything
+const Tab = createBottomTabNavigator();
 
-const App = () => {
-  const Tab = createBottomTabNavigator();
-    return (
-      <NavigationContainer>
-        <Tab.Navigator>
-          <Tab.Screen
-            name="Home"
-            component={HomeScreen}
-            options={{
-              headerShown: false,
+export default App = () => {
+  return (
+    <NavigationContainer>
+      <Tab.Navigator
+        initialRouteName='Home'
+      >
+        <Tab.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{
+            headerShown: false,
 
-              tabBarIcon: ({ focused }) => (
-                <Ionicons
-                  name={focused ? "home" : "home"}
-                  size={25}
-                  color={focused ? "red" : "grey"}
-                />
-              )
-            }}
-          />
-          <Tab.Screen
-            name="Profile"
-            component={ProfileScreen}
-            options={{
-              headerShown: false,
+            tabBarIcon: ({ focused }) => (
+              <Ionicons
+                name={focused ? "home" : "home"}
+                size={25}
+                color={focused ? "red" : "grey"}
+              />
+            )
+          }}
+        />
+        <Tab.Screen
+          name="Profile"
+          component={ProfileScreen}
+          options={{
+            headerShown: false,
 
-              tabBarIcon: ({ focused }) => (
-                <Ionicons
-                  name={focused ? "person" : "person"}
-                  size={25}
-                  color={focused ? "red" : "grey"}
-                />
-              )
-            }}
-          />
-          <Tab.Screen
-            name="Services"
-            component={ServicesScreen}
-            options={{
-              headerShown: false,
+            tabBarIcon: ({ focused }) => (
+              <Ionicons
+                name={focused ? "person" : "person"}
+                size={25}
+                color={focused ? "red" : "grey"}
+              />
+            )
+          }}
+        />
+        <Tab.Screen
+          name="Services"
+          component={ServicesScreen}
+          options={{
+            headerShown: false,
 
-              tabBarIcon: ({ focused }) => (
-                <Ionicons
-                  name={focused ? "services" : "services"}
-                  size={25}
-                  color={focused ? "red" : "grey"}
-                />
-              )
-            }}
-          />
-          <Tab.Screen
-            name="About"
-            component={AboutScreen}
-            options={{
-              headerShown: false,
+            tabBarIcon: ({ focused }) => (
+              <Ionicons
+                name={focused ? "services" : "services"}
+                size={25}
+                color={focused ? "red" : "grey"}
+              />
+            )
+          }}
+        />
+        <Tab.Screen
+          name="About"
+          component={AboutScreen}
+          options={{
+            headerShown: false,
 
-              tabBarIcon: ({ focused }) => (
-                <Ionicons
-                  name={focused ? "about" : "about"}
-                  size={25}
-                  color={focused ? "red" : "grey"}
-                />
-              )
-            }}
-          />
-        </Tab.Navigator>
-      </NavigationContainer>
-    );
-  };
-
-  export default App;
+            tabBarIcon: ({ focused }) => (
+              <Ionicons
+                name={focused ? "about" : "about"}
+                size={25}
+                color={focused ? "red" : "grey"}
+              />
+            )
+          }}
+        />
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
+};

@@ -1,12 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
 
-export default function AboutScreen() {
+export default AboutScreen = () => {
   return (
     <View>
       <Text>AboutScreen</Text>
     </View>
-  )
-}
-
-const styles = StyleSheet.create({})
+  );
+};
